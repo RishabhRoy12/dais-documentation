@@ -79,6 +79,7 @@ Section label in uppercase small text. Four tiles, each with an icon, a large nu
 | **New users** | Person-plus | `{n}` | "Users visiting your website for the first time within the selected date range." |
 | **Sessions** | Pulse line | `{n}` | "Total number of sessions initiated by users during this period, including repeat visits." |
 | **Key events** | Target | `{n}` (0 when no conversion event is configured or fired in GA4) | "Important conversion actions tracked on your website, such as form submissions or purchases." |
+| **Revenue** | Target | `{n}` (0 when no revenue is recorded in GA4) | "Total revenue generated from website activities during the selected date range, including purchases, subscriptions, and other revenue events tracked in GA4." |
 
 ### 5.2 AI insight line
 - Sparkle icon, text, and a **BETA** pill.

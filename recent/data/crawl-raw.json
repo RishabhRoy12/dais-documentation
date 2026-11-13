@@ -1,0 +1,1624 @@
+{
+ "/brand-pulse": {
+  "url": "/brand-pulse",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Home",
+   "Key Movements",
+   "Trending This Week",
+   "Fastest Rising Prompts",
+   "Newly Appearing",
+   "Prompts to Bring Back",
+   "Where to Focus Next",
+   "Opportunities",
+   "Spots to Win Back",
+   "Recommended Actions",
+   "Jump Into Detail"
+  ],
+  "tabs": [],
+  "buttons": [
+   "RANKED PROMPTS 0 0 07-Nov-2026 vs 31-Oct-2026",
+   "AI SEARCH TRAFFIC 12 -5 (-29.4%) vs prior week",
+   "KEYWORDS IN TOP 10 2 0 01 August 2026 vs 25 July 2026",
+   "ORGANIC TRAFFIC 95 -25 (-20.8%) vs prior week",
+   "Prompts Gained HIGH 0 0 Investigate in Prompt Ranking",
+   "Keywords Improved MED 2 +2 Investigate in Keyword Ranking",
+   "Prompts to Bring Back LOW 0 0 Investigate in Prompt Ranking",
+   "Keywords to Recover LOW 2 -2 Investigate in Keyword Ranking",
+   "1 2 keywords sit just outside the Top 3 — small effort, quick wins.",
+   "2 2 keywords are moving up — keep the content fresh to hold the gain.",
+   "3 A few competitors gained mentions — worth a look to see what's working.",
+   "Overview",
+   "Prompt Ranking",
+   "Keyword Ranking",
+   "Citations",
+   "Competitors",
+   "Activity",
+   "YouTube"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Home Home Your weekly AI search command center for Herbal Chakra. THIS WEEK'S SIGNAL Herbal Chakra has 2 keywords moved up, and 2 keywords close to Top 3, 2 keywords to recover ready to act on. Traffic: 2026-11-04 – 2026-11-10 vs 2026-10-28 – 2026-11-03 Prompts: 07-Nov-2026 vs 31-Oct-2026 Keywords: 01 August 2026 vs 25 July 2026 Citations: 7th November 2026 vs 31st October 2026 RANKED PROMPTS 0 0 07-Nov-2026 vs 31-Oct-2026 AI SEARCH TRAFFIC 12 -5 (-29.4%) vs prior week KEYWORDS IN TOP 10 2 0 01 August 2026 vs 25 July 2026 ORGANIC TRAFFIC 95 -25 (-20.8%) vs prior week Key Movements The four biggest changes this week. Click any card to dive in. Prompts Gained HIGH 0 0 Investigate in Prompt Ranking Keywords Improved MED 2 +2 Investigate in Keyword Ranking Prompts to Bring Back LOW 0 0 Investigate in Prompt Ranking Keywords to Recover LOW 2 -2 Investigate in Keyword Ranking Trending This Week Quiet shifts that are easy to miss in the regular reports. Fastest Rising Prompts No rising prompts this week. Newly Appearing No new prompts entered ranking this week. Prompts to Bring Back Every prompt held its rank this week — a strong base to build on. Where to Focus Next Wins worth pushing further, and spots worth winning back. Opportunities Private label Shilajit manufacturer Rank #6 • close to Top 3 Shilajit manufacturer in India Rank #7 • close to Top 3 Private label Shilajit manufacturer 7 → 6 ashwagandha manufacturer 23 → 22 Spots to Win Back Herbal nutraceutical manufacturer 19 → 20 Shilajit manufacturer in India 6 → 7 Aydis Labs gaining mentions +9 Shakumbhri Herbals Private Limited gaining mentions +4 Recommended Actions Prioritized next steps based on this week's signals. 1 2 keywords sit just outside the Top 3 — small effort, quick wins. 2 2 ke",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "POST FN:fetch-searchscore-trend {brandName} [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-dropped-keywords {brandOverride} [200]",
+   "POST FN:fetch-keywords-ranking {brandOverride} [200]",
+   "POST FN:fetch-competitor-mentions {brandOverride} [200]",
+   "POST FN:fetch-improved-keywords {brandOverride} [200]",
+   "POST FN:fetch-citation-data {brandOverride} [200]",
+   "POST FN:fetch-prompt-visibility {brandOverride} [200]",
+   "POST FN:fetch-ga4-analytics {brandOverride,dateRange,startDate,endDate} [200]"
+  ]
+ },
+ "/analytics/overview": {
+  "url": "/analytics/overview",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Overview",
+   "ANALYTICS (ORGANIC + AI SEARCH)",
+   "Analytics (AI Search)",
+   "Analytics (Organic Traffic)",
+   "Prompt Ranking Performance Week Wise (ChatGPT)",
+   "Keyword Ranking Performance Week Wise",
+   "AI Search Decision Table",
+   "AI Search Discovery Table"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Last 30 Days",
+   "Oct 14, 2026 - Nov 12, 2026",
+   "26 of 26 dates",
+   "ChatGPT",
+   "Gemini"
+  ],
+  "labels": [
+   "Compare"
+  ],
+  "th": [
+   "Session source",
+   "Active users",
+   "New users",
+   "Sessions",
+   "Bounce rate",
+   "Key events",
+   "#",
+   "Landing page",
+   "Clicks GSC",
+   "Impressions",
+   "CTR",
+   "Position",
+   "Particulars",
+   "07-Nov-2026",
+   "31-Oct-2026",
+   "24-Oct-2026",
+   "17-Oct-2026",
+   "10-Oct-2026",
+   "03-Oct-2026",
+   "26-Sep-2026",
+   "19-Sep-2026",
+   "12-Sep-2026",
+   "05-Sep-2026",
+   "29-Aug-2026",
+   "22-Aug-2026",
+   "15-Aug-2026",
+   "08-Aug-2026",
+   "01-Aug-2026",
+   "25-Jul-2026",
+   "18-Jul-2026",
+   "11-Jul-2026",
+   "04-Jul-2026",
+   "27-Jun-2026",
+   "20-Jun-2026",
+   "13-Jun-2026",
+   "06-Jun-2026",
+   "30-May-2026",
+   "23-May-2026",
+   "18-May-2026",
+   "Keyword Ranking"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Overview Overview Comprehensive analytics dashboard Compare Last 30 Days Oct 14, 2026 - Nov 12, 2026 ANALYTICS (ORGANIC + AI SEARCH) 379 Active users 346 New users 543 Sessions 0 Key events chatgpt.com accounts for 83% of AI Search traffic during this period. BETA No data collected yet Website analytics: Not collected Keyword ranking: Not collected Analytics (AI Search) Active Users by time 10/16 10/19 10/22 10/25 10/28 10/31 11/03 11/06 11/09 11/12 0 1 2 3 4 Total Sessions by AI Search Platforms 0 15 30 45 60 chatgpt.com perplexity.ai gemini.google.com 44 5 4 Session source Active users New users Sessions Bounce rate Key events chatgpt.com 38 37 44 15.9% 0 perplexity.ai 1 1 5 80.0% 0 gemini.google.com 3 2 4 0.0% 0 Total 40 40 53 20.75% 0 Landing Page Wise Performance - AI Search Traffic # Landing page Active users New users Sessions Key events 1. / 21 20 24 0 2. /contact 6 6 9 0 3. (not set) 2 0 4 0 4. NEW /about 2 2 2 0 5. /categories/fmcg/healthy-snacks 2 2 2 0 6. NEW /certifications 2 2 2 0 7. NEW /products/ayurvedic-and-herbal-nutraceuticals/moringa-range 2 2 2 0 8. NEW /products/ayurvedic-and-herbal-nutraceuticals 0 0 2 0 9. NEW /categories/fmcg/baby-nutrition 1 1 1 0 10. NEW /categories/himalayan-shilajit 1 1 1 0 11. NEW /categories/moringa 1 1 1 0 12. /products/health-food-and-beverages 1 1 1 0 13. NEW /products/health-food-and-beverages/beverages-range 1 1 1 0 14. /products/ready-to-eat 1 1 1 0 Grand total 40 40 53 0 AI Search drives 10% of total sessions, with 42 active users across 3 platforms. BETA Analytics (Organic Traffic) Sessions over time 10/16 10/19 10/22 10/25 10/28 10/31 11/03 11/06 11/09 11/12 0 9 18 27 36 Sessions by source 0 150 300 450 600 google bing images.search.yahoo.com in.search.yahoo.com seznam 469 18 ",
+  "api": [
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST FN:fetch-keywords-ranking [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-prompt-weekly-summary [200]",
+   "POST FN:fetch-search-console-data {brand,startDate,endDate,rowLimit} [200]",
+   "POST FN:fetch-ga4-analytics {startDate,endDate} [200]"
+  ]
+ },
+ "/analytics/console-insights": {
+  "url": "/analytics/console-insights",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Search Console",
+   "Clicks & Impressions Over Time"
+  ],
+  "tabs": [
+   "Top Queries",
+   "Top Pages",
+   "Devices",
+   "Countries"
+  ],
+  "buttons": [
+   "Start: Oct 14, 2026",
+   "End: Nov 10, 2026",
+   "Refresh",
+   "Top Queries",
+   "Top Pages",
+   "Devices",
+   "Countries",
+   "All",
+   "Branded (16)",
+   "Non-branded (234)"
+  ],
+  "labels": [
+   "Compare"
+  ],
+  "th": [
+   "Query",
+   "Clicks",
+   "Impressions",
+   "CTR",
+   "Position"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Search Console Search Console Google Search Console performance — Herbal Chakra Start: Oct 14, 2026 End: Nov 10, 2026 Compare Refresh Property: sc-domain:herbalchakra.in TOTAL CLICKS 335 TOTAL IMPRESSIONS 6,215 AVG CTR 5.39% AVG POSITION 19.8 Clicks & Impressions Over Time 2026-10-15 2026-10-17 2026-10-19 2026-10-21 2026-10-23 2026-10-25 2026-10-27 2026-10-29 2026-10-31 2026-11-02 2026-11-04 2026-11-06 2026-11-08 2026-11-10 0 7 14 21 28 0 80 160 240 320 ClicksImpressions Top Queries Top Pages Devices Countries All Branded (16) Non-branded (234) Query Clicks Impressions CTR Position herbal chakra 113 208 54.33% 2.4 herbal chakra private limited 28 51 54.90% 1.0 herbal chakra pvt ltd 23 41 56.10% 1.0 herbal chakra products 4 10 40.00% 1.0 healthy snacks manufacturers in india 2 35 5.71% 5.6 shilajit manufacturer 2 43 4.65% 7.1 shilajit manufacturer in india 2 5 40.00% 3.6 contact details 1 1 100.00% 1.0 healthy snacks brands in india 1 2 50.00% 78.0 healthy snacks suppliers 1 1 100.00% 8.0 herbal chakra photos 1 6 16.67% 2.7 herbal product manufacturer 1 4 25.00% 15.8 it is in noida 1 1 100.00% 2.0 shilajit customer care number 1 11 9.09% 7.5 shilajit manufacturers in india 1 20 5.00% 7.2 third party beverage manufacturers in india 1 21 4.76% 7.3 3rd party food manufacturers 0 10 0.00% 5.4 authentic himalayan shilajit resin 0 1 0.00% 65.0 ayurveda company 0 1 0.00% 21.0 ayurveda company in noida 0 2 0.00% 30.5 ayurveda organic products 0 1 0.00% 6.0 ayurvedic & herbal product manufacturer in india 0 1 0.00% 40.0 ayurvedic company in noida 0 9 0.00% 9.0 ayurvedic face serum 0 9 0.00% 80.8 ayurvedic herbal products 0 1 0.00% 32.0 ayurvedic juice manufacturers 0 3 0.00% 48.0 ayurvedic medicine shop near me 0 1 0.00% 6.0 ayurvedic serum 0 ",
+  "api": [
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-search-console-data {brand,startDate,endDate} [200]",
+   "GET REST:brands ?select,name,limit [200]",
+   "POST FN:classify-branded-queries {brand,queries} [200]"
+  ]
+ },
+ "/analytics/competitors": {
+  "url": "/analytics/competitors",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Competitors Intelligence",
+   "RECOMMENDED ACTIONS",
+   "Share of Voice - Gemini",
+   "Brand's Mention in AI Indexed Sources - ChatGPT",
+   "Authority Score Last updated: July 2026",
+   "Domain by Traffic share",
+   "Branded Keywords and Non-branded Keywords by Domain"
+  ],
+  "tabs": [],
+  "buttons": [
+   "10 of 224 brands",
+   "Last 7 days",
+   "Gemini",
+   "ChatGPT",
+   "10 of 10 brands"
+  ],
+  "labels": [],
+  "th": [
+   "Domain",
+   "Organic Traffic",
+   "Organic Keywords",
+   "Backlinks",
+   "Ref. Domains",
+   "Authority Score"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Competitors Intelligence Competitors Intelligence Brand mention tracking and competitive analysis Herbal Chakra holds only 1% traffic share and an authority score of 6, trailing market leaders Zoicpharmaceuticals (55% traffic) and wilsondrugs (21 authority). BETA RECOMMENDED ACTIONS BETA COMPETITION HIGH Address severe traffic deficit against Zoicpharmaceuticals and wilsondrugs Herbal Chakra controls only 1% traffic share, whereas Zoicpharmaceuticals and wilsondrugs command 55% and 39% respectively. → Audit top organic search queries driving traffic to Zoicpharmaceuticals (55%) and wilsondrugs (39%) to target their key audience acquisition paths. VISIBILITY HIGH Close the domain authority gap with Alicanto Biotech and wilsondrugs Herbal Chakra has an authority score of 6, lagging significantly behind Alicanto Biotech (21), wilsondrugs (21), and Zoicpharmaceuticals (12). → Analyze backlink profiles of Alicanto Biotech and wilsondrugs (both at authority score 21) to identify high-authority digital PR and linking opportunities. GROWTH MEDIUM Compete for share across the 28 total AI mentions There are 28 total AI mentions distributed across the 10 tracked brands in the competitive set. → Examine the specific prompts generating the 28 AI citations across the 10 brands to optimize Herbal Chakra's content for AI engine recommendation surfaces. Share of Voice - Gemini 10 of 224 brands Last 7 days Gemini ChatGPT Herbal Chakra Dabur Himalaya Patanjali Ayurved Baidyanath Zandu Charak Pharma Alicanto Biotech Kapiva Emami Sep 14 Sep 15 Sep 16 Sep 17 Sep 18 Sep 19 Sep 20 0% 3% 6% 9% 12% Brand's Mention in AI Indexed Sources - ChatGPT 10 of 10 brands Last 7 days ChatGPT Gemini Herbal Chakra Dabur Himalaya Aydis Labs Anantah Foods Songara All Ayurve",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:brands ?select,or,limit [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "POST FN:fetch-competitor-mentions {brandName,dateRangeDays} [200]",
+   "POST FN:fetch-competitor-mentions {brandName} [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-competitor-mentions {brandName,startDate,endDate} [200]",
+   "POST FN:fetch-traffic-share-data [200]",
+   "POST FN:fetch-semrush-competitor-data [200]",
+   "POST FN:fetch-keywords-by-domain [200]",
+   "POST REST:rpc/get_share_of_voice_window {p_brand_name,p_days,p_offset,p_limit} [200]",
+   "POST FN:generate-page-insights {page,brand,source,signals} [200]"
+  ]
+ },
+ "/analytics/prompt-ranking": {
+  "url": "/analytics/prompt-ranking",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Prompt Ranking",
+   "Current AI Visibility & Readiness",
+   "Gemini Visibility %",
+   "ChatGPT Visibility %",
+   "RECOMMENDED ACTIONS",
+   "AI Rankings"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Gemini",
+   "ChatGPT",
+   "07-Nov-2026",
+   "31-Oct-2026",
+   "24-Oct-2026",
+   "17-Oct-2026",
+   "10-Oct-2026",
+   "03-Oct-2026",
+   "26-Sep-2026",
+   "19-Sep-2026",
+   "12-Sep-2026",
+   "05-Sep-2026",
+   "29-Aug-2026",
+   "22-Aug-2026",
+   "15-Aug-2026",
+   "08-Aug-2026",
+   "01-Aug-2026",
+   "25-Jul-2026",
+   "18-Jul-2026",
+   "11-Jul-2026",
+   "04-Jul-2026",
+   "27-Jun-2026",
+   "20-Jun-2026",
+   "13-Jun-2026",
+   "06-Jun-2026",
+   "30-May-2026",
+   "23-May-2026",
+   "18-May-2026"
+  ],
+  "labels": [],
+  "th": [
+   "#",
+   "Prompts",
+   "07-Nov-2026",
+   "31-Oct-2026",
+   "24-Oct-2026",
+   "17-Oct-2026",
+   "10-Oct-2026",
+   "03-Oct-2026",
+   "26-Sep-2026",
+   "19-Sep-2026",
+   "12-Sep-2026",
+   "05-Sep-2026",
+   "29-Aug-2026",
+   "22-Aug-2026",
+   "15-Aug-2026",
+   "08-Aug-2026",
+   "01-Aug-2026",
+   "25-Jul-2026",
+   "18-Jul-2026",
+   "11-Jul-2026",
+   "04-Jul-2026",
+   "27-Jun-2026",
+   "20-Jun-2026",
+   "13-Jun-2026",
+   "06-Jun-2026",
+   "30-May-2026",
+   "23-May-2026",
+   "18-May-2026"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Prompt Ranking Prompt Ranking Current AI Visibility & Readiness Gemini Visibility % 0.00% ChatGPT Visibility % 0.00% Herbal Chakra holds 0% ranked coverage across all 22 tracked prompts, resulting in 0% ChatGPT visibility as of the 07-Nov-2026 scan. BETA RECOMMENDED ACTIONS BETA VISIBILITY HIGH Address zero ranking across all 22 tracked prompts The 07-Nov-2026 scan reports 0 ranked prompts out of 22 tracked, leaving ranked coverage at 0%. → Audit the 22 target prompt queries to identify brand mention gaps and seed core Herbal Chakra product entities across digital references. RISK HIGH Resolve total absence of ChatGPT visibility (0%) ChatGPT visibility currently sits at 0%, while Gemini and Perplexity lack tracking data entirely. → Target brand citations across authoritative third-party reviews and directories crawled by OpenAI to generate initial conversational search presence. GROWTH MEDIUM Categorize 22 tracked queries into branded and non-branded sets Both branded and non-branded metrics register at 0 despite 22 prompts being actively tracked in the platform. → Map and tag all 22 prompts by brand intent to enable isolated monitoring of branded defense versus non-branded discovery queries. AI Rankings 22 prompts Gemini ChatGPT # Prompts 07-Nov-2026 31-Oct-2026 24-Oct-2026 17-Oct-2026 10-Oct-2026 03-Oct-2026 26-Sep-2026 19-Sep-2026 12-Sep-2026 05-Sep-2026 29-Aug-2026 22-Aug-2026 15-Aug-2026 08-Aug-2026 01-Aug-2026 25-Jul-2026 18-Jul-2026 11-Jul-2026 04-Jul-2026 27-Jun-2026 20-Jun-2026 13-Jun-2026 06-Jun-2026 30-May-2026 23-May-2026 18-May-2026 1. Ayurvedic baby food products manufacturer in India. - - - - - - - - - - - - - - - - - - - - - - - - - - 2. Best Ayurvedic exporter India for herbal wellness products. - - - - - - - 5 3 1 1",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:brand_model_config ?select,brand_name,limit [200]",
+   "GET REST:prompts_brandwise ?select,brand [200]",
+   "POST REST:rpc/get_prompt_selection_access {_brand_name} [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "GET REST:weekly_prompt_ranking ?select,brand_name,order,limit [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-prompt-visibility [200]",
+   "POST FN:generate-page-insights {page,brand,source,signals} [200]"
+  ]
+ },
+ "/analytics/keyword-ranking": {
+  "url": "/analytics/keyword-ranking",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Keyword Ranking",
+   "RECOMMENDED ACTIONS",
+   "Keyword Performance Week Wise"
+  ],
+  "tabs": [],
+  "buttons": [
+   "1 August 2026",
+   "9 of 9 dates",
+   "1 August 2026 ▲",
+   "25 July 2026",
+   "18 July 2026",
+   "11 July 2026",
+   "4 July 2026",
+   "27 June 2026",
+   "20 June 2026",
+   "13 June 2026",
+   "6 June 2026"
+  ],
+  "labels": [],
+  "th": [
+   "Sr. No",
+   "Keywords",
+   "1 August 2026 ▲",
+   "25 July 2026",
+   "18 July 2026",
+   "11 July 2026",
+   "4 July 2026",
+   "27 June 2026",
+   "20 June 2026",
+   "13 June 2026",
+   "6 June 2026"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Keyword Ranking Keyword Ranking 1 August 2026 0 Keywords in Top 5 as of 1 August 2026 2 Keywords in Top 10 as of 1 August 2026 3 Keywords in Top 20 as of 1 August 2026 4 Keywords in Top 50 as of 1 August 2026 4 Keywords in Top 100 as of 1 August 2026 Herbal Chakra saw zero keyword movement between 25 July and 01 August 2026, with only 4 of 20 tracked keywords ranking in the Top 100 and none in the Top 5. BETA RECOMMENDED ACTIONS BETA VISIBILITY HIGH Target indexation and relevance for 16 unranked keywords Only 4 of the 20 tracked keywords rank in the Top 100 as of 01 August 2026, leaving 16 keywords completely outside the tracked ranking tiers. → Audit the 16 unranked keywords to verify page mapping, search intent alignment, and baseline technical indexation status. GROWTH MEDIUM Advance the 2 Top 10 keywords into the Top 5 Herbal Chakra holds 2 keywords in the Top 10 but has 0 keywords in the Top 5 across both 25 July and 01 August 2026. → Strengthen internal linking and update on-page content for the 2 URLs currently ranking between positions 6 and 10 to push them into the Top 5. Keyword Performance Week Wise 9 of 9 dates Sr. No Keywords 1 August 2026 ▲ 25 July 2026 18 July 2026 11 July 2026 4 July 2026 27 June 2026 20 June 2026 13 June 2026 6 June 2026 1. Private label Shilajit manufacturer 6 7 7 6 6 6 6 - - 2. Shilajit manufacturer in India 7 6 6 7 6 6 - - - 3. Herbal nutraceutical manufacturer 20 19 22 23 27 27 25 - - 4. ashwagandha manufacturer 22 23 29 30 - - - - - 5. Ayurvedic manufacturer India - - - - - - - - - 6. Best Shilajit Manufacture - - - - - - - - - 7. ready to eat products - - - - - - - - - 8. moringa powder - - - - - - - - - 9. ashwagandha capsules - - - - - - - - - 10. Pure Himalayan Shilajit resin - - - - - - - ",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST REST:rpc/get_keyword_selection_access {_brand_name} [200]",
+   "POST FN:fetch-keywords-ranking [200]",
+   "POST FN:generate-page-insights {page,brand,source,signals} [200]"
+  ]
+ },
+ "/analytics/citations": {
+  "url": "/analytics/citations",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Citation Overview",
+   "RECOMMENDED ACTIONS",
+   "Brand's Citations in AI Indexed Sources - ChatGPT",
+   "Brand Domain Citations"
+  ],
+  "tabs": [],
+  "buttons": [
+   "10 of 10 brands",
+   "Last 7 days",
+   "ChatGPT",
+   "Gemini"
+  ],
+  "labels": [
+   "Check",
+   "Cross"
+  ],
+  "th": [
+   "Prompts",
+   "7th November 2026",
+   "31st October 2026",
+   "24th October 2026",
+   "17th October 2026",
+   "10th October 2026",
+   "3rd October 2026",
+   "26th September 2026",
+   "19th September 2026",
+   "12th September 2026",
+   "5th September 2026",
+   "29th August 2026",
+   "22nd August 2026",
+   "15th August 2026",
+   "12th August 2026",
+   "10th August 2026",
+   "8th August 2026",
+   "1st August 2026",
+   "25th July 2026",
+   "18th July 2026",
+   "11th July 2026",
+   "4th July 2026",
+   "27th June 2026",
+   "20th June 2026",
+   "13th June 2026",
+   "6th June 2026",
+   "30th May 2026",
+   "24th May 2026",
+   "23rd May 2026",
+   "18th May 2026"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Citation Overview Citation Overview Herbal Chakra has a 0% citation rate across all 22 tracked prompts in ChatGPT as of November 7, 2026, resulting in a 100% explicit absence rate. BETA RECOMMENDED ACTIONS BETA RISK HIGH Address 100% citation absence across 22 ChatGPT prompts Herbal Chakra recorded 0 citations out of 22 tracked prompts in the latest scan, leaving a 100% lost rate with 0 WoW citation growth. → Audit current third-party mentions and directory profiles to build entity signals recognized by ChatGPT. VISIBILITY HIGH Build coverage for B2B manufacturing and export queries Herbal Chakra is absent in high-intent prompts including export-quality herbal supplements and private label manufacturing in India. → Develop targeted technical content and landing pages addressing Ayurvedic private labeling, baby food, and export manufacturing. Brand's Citations in AI Indexed Sources - ChatGPT 10 of 10 brands Last 7 days ChatGPT Gemini shakumbhrigroups.co.in aydis.in vaishnavigramodyog.com herbalchakra.in anantahfoods.com dabur.com cdsco.gov.in himalayawellness.in hcpwellness.in Sep 14 Sep 15 Sep 16 Sep 17 Sep 18 Sep 19 Sep 20 0 5 10 15 20 Value Date Brand Domain Citations Check Cross ChatGPT Gemini Prompts 7th November 2026 31st October 2026 24th October 2026 17th October 2026 10th October 2026 3rd October 2026 26th September 2026 19th September 2026 12th September 2026 5th September 2026 29th August 2026 22nd August 2026 15th August 2026 12th August 2026 10th August 2026 8th August 2026 1st August 2026 25th July 2026 18th July 2026 11th July 2026 4th July 2026 27th June 2026 20th June 2026 13th June 2026 6th June 2026 30th May 2026 24th May 2026 23rd May 2026 18th May 2026 1.Ayurvedic baby food products manufacturer in India. 2.Which ",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET AUTH:user [200]",
+   "GET REST:brands ?select,or [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-citation-data [200]",
+   "POST FN:fetch-sources-data [200]",
+   "POST FN:fetch-sources-data {startDate,endDate} [200]",
+   "GET REST:citation_graph_data ?select,brand_name,order,offset,limit [200]",
+   "POST FN:generate-page-insights {page,brand,source,signals} [200]"
+  ]
+ },
+ "/analytics/concepts": {
+  "url": "/analytics/concepts",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Concept Overview",
+   "Concepts Aggregated - ChatGPT",
+   "Concepts by Brand (2026-09-14)"
+  ],
+  "tabs": [],
+  "buttons": [
+   "ChatGPT",
+   "July 2026"
+  ],
+  "labels": [
+   "Sentiments Positive",
+   "Sentiments Neutral",
+   "Sentiments Negative"
+  ],
+  "th": [
+   "Concept",
+   "Mentions (July 2026)",
+   "Sentiments Positive",
+   "Sentiments Neutral",
+   "Sentiments Negative",
+   "Baidyanath",
+   "Dabur",
+   "Himalaya",
+   "Patanjali Ayurved",
+   "herbal chakra"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Concept Overview Concept Overview ChatGPT Concepts Aggregated - ChatGPT July 2026 Sentiments Positive Sentiments Neutral Sentiments Negative Concept Mentions (July 2026) Sentiments Positive Sentiments Neutral Sentiments Negative 1. finished product categories 5 4 1 0 2. manufacturing services 4 2 2 0 3. finished product categories__supplements & nutraceuticals 4 3 1 0 4. manufacturing services__contract & private-label 4 2 2 0 5. manufacturing services__contract & private-label__contract manufacturing 2 1 1 0 6. finished product categories__supplements & nutraceuticals__herbal supplements 2 1 1 0 7. manufacturing services__contract & private-label__private label 2 1 1 0 8. regulatory compliance & certifications 2 1 1 0 9. regulatory compliance & certifications__gmp 2 1 1 0 10. regulatory compliance & certifications__gmp__gmp certification 1 1 0 0 11. finished product categories__supplements & nutraceuticals__capsules 1 1 0 0 12. finished product categories__beverages 1 1 0 0 13. ingredients & sourcing__herbal extracts & powders__herbal powders 1 1 0 0 14. ingredients & sourcing__herbal extracts & powders 1 1 0 0 15. finished product categories__supplements & nutraceuticals__gummies 1 1 0 0 16. regulatory compliance & certifications__gmp__gmp-certified formulations 1 0 1 0 17. ingredients & sourcing 1 1 0 0 1 - 17 / 17 Concepts by Brand (2026-09-14) ChatGPT Concept Baidyanath Dabur Himalaya Patanjali Ayurved herbal chakra export & distribution 7 57 40 16 62 finished product categories 44 202 168 96 97 flaxseed bars 0 0 0 0 1 health & wellness focus 5 22 26 6 6 ingredients & sourcing 3 42 42 9 23 lifestyle & clean-label claims 0 5 8 0 0 manufacturing services 22 55 13 12 127 market positioning & pricing 7 14 13 11 5 packaging & brandin",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-concept-data [200]",
+   "POST FN:fetch-concept-by-brand [200]"
+  ]
+ },
+ "/analytics/reddit-overview": {
+  "url": "/analytics/reddit-overview",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Reddit Overview",
+   "Subreddit Impact",
+   "Threads"
+  ],
+  "tabs": [],
+  "buttons": [
+   "ChatGPT",
+   "2026-09-21",
+   "Prompts",
+   "Visibility",
+   "Threads",
+   "Citations"
+  ],
+  "labels": [],
+  "th": [
+   "Subreddit",
+   "Link",
+   "Prompts",
+   "Visibility",
+   "Threads",
+   "Citations",
+   "Thread",
+   "Thread URL Click to open thread"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Reddit Overview Reddit Overview Subreddit impact and trending Reddit threads for your brand ChatGPT 2026-09-21 Subreddit Impact Subreddit Link Prompts Visibility Threads Citations r/u_ayurvedic1223 1 50.0% 1 1 r/ayurvedabeauty 1 50.0% 1 1 Threads Thread Link Thread URL Click to open thread Subreddit Prompts List Of Best Ayurvedic Skincare Brand In India R https://www.reddit.com/r/ayurvedabeauty/comments/zqnap8/list_of_best_ayurvedic_skincare_brand_in_india r/ayurvedabeauty 1 — R https://www.reddit.com/r/u_ayurvedic1223/comments/yk33py r/u_ayurvedic1223 1",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-reddit-overview [200]"
+  ]
+ },
+ "/analytics/youtube": {
+  "url": "/analytics/youtube",
+  "title": "DareAISearch Platform",
+  "h": [
+   "YouTube Analytics",
+   "No Videos Yet"
+  ],
+  "tabs": [],
+  "buttons": [],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Analytics YouTube Analytics YouTube Analytics No Videos Yet YouTube video data will appear here once videos are added to the tracking sheet.",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "POST FN:fetch-youtube-data [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/analytics/product-leaderboard": {
+  "url": "/analytics/product-leaderboard",
+  "title": "DareAISearch Platform",
+  "h": [
+   "ChatGPT Shopping Leaderboard",
+   "No Leaderboard Data Yet"
+  ],
+  "tabs": [],
+  "buttons": [],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Analytics Product Leaderboard ChatGPT Shopping Leaderboard No Leaderboard Data Yet Product leaderboard data will appear here once ranking data is available.",
+  "api": [
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "POST FN:fetch-product-leaderboard [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/analytics/local-listings": {
+  "url": "/analytics/local-listings",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Local Listings",
+   "No Listings Yet"
+  ],
+  "tabs": [],
+  "buttons": [],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Analytics Local Listings Local Listings No Listings Yet Local listing data will appear here once posts are added to the tracking sheet.",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "POST FN:fetch-local-listings [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/analytics/activity": {
+  "url": "/analytics/activity",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Activity Tracker",
+   "Recent Activity"
+  ],
+  "tabs": [],
+  "buttons": [],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Analytics Activity Tracker Activity Tracker Data as of 2026-08-04 Recent Activity Latest updates and events DareAISearch Insights validated and finalized the Escon Gensets SEO monthly performance report. 4th Aug, 2026 DareAISearch Insights validated and finalized the Escon Gensets SEO monthly performance report. 3rd Aug, 2026 DareAISearch Publisher strengthened on-site content through internal linking and image optimization. 1st Aug, 2026 DareAISearch Monitor tracked AI prompt rankings across leading generative search platforms. 31st Jul, 2026 DareAISearch Monitor tracked weekly keyword ranking movements across priority search terms. 30th Jul, 2026 DareAISearch Insights published Herbal Chakra weekly performance and visibility analysis. 29th Jul, 2026 DareAISearch Publisher optimized META tags and H1 headings across priority Herbal Chakra pages. 28th Jul, 2026 DareAISearch Monitor tracked AI prompt rankings across leading generative search platforms. 27th Jul, 2026 DareAISearch Publisher strengthened on-site content through internal linking and image optimization. 27th Jul, 2026 DareAISearch Insights published Herbal Chakra weekly performance and visibility analysis. 24th Jul, 2026 DareAISearch Monitor tracked weekly keyword ranking movements across priority search terms. 24th Jul, 2026 DareAISearch Publisher strengthened on-site content through internal linking and image optimization. 23rd Jul, 2026 DareAISearch Monitor tracked AI prompt rankings across leading generative search platforms. 22nd Jul, 2026 DareAISearch Monitor tracked weekly keyword ranking movements across priority search terms. 21st Jul, 2026 DareAISearch Insights published Herbal Chakra weekly performance and visibility analysis. 20th Jul, 2026 DareAISearch Audit Engine comp",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-activity-data [200]"
+  ]
+ },
+ "/analytics/brand-mom": {
+  "url": "/analytics/brand-mom",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Strategic Sync-ups",
+   "No meetings yet"
+  ],
+  "tabs": [],
+  "buttons": [
+   "New Meeting"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Analytics Strategic Sync-ups Strategic Sync-ups AI-powered Minutes of Meeting — Extract tasks, decisions & summaries automatically New Meeting No meetings yet Create your first AI-powered meeting notes to get started. New Meeting",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET AUTH:user [200]",
+   "GET REST:sub_admin_brands ?select,brand_name [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:manage-mom {action,brand_name} [200]"
+  ]
+ },
+ "/intelligence/brand-voice": {
+  "url": "/intelligence/brand-voice",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Brand Voice",
+   "Approved Blogs",
+   "Brand Voice Document"
+  ],
+  "tabs": [
+   "Brand Voice Document",
+   "Brand Voice Review"
+  ],
+  "buttons": [
+   "Brand Voice Document",
+   "Brand Voice Review",
+   "Add Blog",
+   "Generate Brand Voice",
+   "History"
+  ],
+  "labels": [
+   "Auto-refresh monthly"
+  ],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Brand Voice Brand Voice AI-powered brand voice generation and content review Brand Voice Document Brand Voice Review Brand Voice Document Herbal Chakra History The brand voice document is being prepared. It will appear here once it's ready.",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET REST:brand_voice_settings ?select,brand_name [200]",
+   "GET REST:brand_voices ?select,brand_name,is_active,order,limit [200]",
+   "GET REST:brand_voice_source_docs ?select,brand_name,is_primary,order,limit [200]",
+   "GET REST:brand_voice_blogs ?select,brand_name,order [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-execution-blogs {brandOverride} [200]"
+  ]
+ },
+ "/analytics/prompt-research": {
+  "url": "/analytics/prompt-research",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Prompt Planner"
+  ],
+  "tabs": [
+   "Related Topics",
+   "Prompts",
+   "Brands",
+   "Source Domains"
+  ],
+  "buttons": [
+   "ChatGPT",
+   "Run Research",
+   "Refresh Data",
+   "Related Topics",
+   "Prompts",
+   "Brands",
+   "Source Domains",
+   "25 / page"
+  ],
+  "labels": [],
+  "th": [
+   "Topic",
+   "Volume",
+   "Prompts Count",
+   "Relevance Score"
+  ],
+  "text": "DareAISearch Herbal Chakra Analytics Prompt Planner Beta Prompt Planner Discover related topics, prompts, brands and sources BETA ChatGPT Run Research Refresh Data Related Topics Prompts Brands Source Domains Enter a topic above to begin 25 / page Topic Volume Prompts Count Relevance Score Run a research query to see results.",
+  "api": [
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/blog-generator-v2": {
+  "url": "/blog-generator-v2",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Blog Generator",
+   "Requests"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Try a Blog!"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Blog Generator Blog Generator Herbal Chakra Try a Blog! Requests 0 Nothing here yet. Raise a request to get started.",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:team_members ?select,limit [200]",
+   "GET REST:blog_column_layouts ?select,brand_name,limit [200]",
+   "GET REST:brands ?select,name,limit [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/get_blog_v2_brand_ref {_name} [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:blog_topic_generation_v2 ?select,brand_id,order,limit [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/faq-generator": {
+  "url": "/faq-generator",
+  "title": "DareAISearch Platform",
+  "h": [
+   "FAQ Creator"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Create FAQs"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra FAQ Creator FAQ Creator Create comprehensive FAQs based on AI search patterns Click below to configure and create FAQs for your brand. Create FAQs",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "HEAD REST:faq_results ?select,user_id [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:faq_results ?select,user_id,created_at,order [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/youtube-intelligence": {
+  "url": "/youtube-intelligence",
+  "title": "DareAISearch Platform",
+  "h": [
+   "YouTube Intelligence"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Generate YouTube Title & Description"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra YouTube Intelligence YouTube Intelligence AI-powered YouTube content intelligence for your brand Generate AI-powered YouTube content strategy and optimization insights. Generate YouTube Title & Description",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "HEAD REST:youtube_intelligence_results ?select,user_id [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:youtube_intelligence_results ?select,user_id,created_at,order [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/intelligence": {
+  "url": "/intelligence",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Publisher Intelligence",
+   "Filters"
+  ],
+  "tabs": [
+   "Marketplace",
+   "My Orders",
+   "Analytics"
+  ],
+  "buttons": [
+   "Marketplace",
+   "My Orders",
+   "Analytics",
+   "Reset",
+   "Any"
+  ],
+  "labels": [
+   "Search",
+   "AI Recommendations",
+   "Niche",
+   "SaaS",
+   "Tech",
+   "Finance",
+   "Health",
+   "Legal",
+   "Crypto",
+   "eCommerce",
+   "News",
+   "Lifestyle",
+   "Entertainment",
+   "Education",
+   "Travel",
+   "Business",
+   "Marketing",
+   "Sports",
+   "Politics",
+   "Automotive",
+   "Food",
+   "DA range",
+   "Monthly traffic",
+   "Any",
+   "< 10k",
+   "10k – 100k",
+   "100k – 500k",
+   "500k+",
+   "Country",
+   "Language"
+  ],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Publisher Intelligence Publisher Intelligence Discover, evaluate, and order placements on premium publisher websites — powered by AI. Marketplace My Orders Analytics Filters Reset Search AI Recommendations Niche SaaS Tech Finance Health Legal Crypto eCommerce News Lifestyle Entertainment Education Travel Business Marketing Sports Politics Automotive Food DA range 0–100 Monthly traffic Any < 10k 10k – 100k 100k – 500k 500k+ Country Any Language Any Max budget ($) No publishers match your filters Try widening the DA range or clearing niches.",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "GET REST:publisher_websites_public ?select,order [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/execution/blogs": {
+  "url": "/execution/blogs",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Blogs"
+  ],
+  "tabs": [],
+  "buttons": [
+   "July"
+  ],
+  "labels": [],
+  "th": [
+   "#",
+   "Blog Topic",
+   "Primary Keyword",
+   "Topic Status",
+   "Blog Status",
+   "Final Status",
+   "Live Link"
+  ],
+  "text": "DareAISearch Herbal Chakra Blogs Blogs 5 blogs for July July # Blog Topic Primary Keyword Topic Status Blog Status Final Status Live Link 1 The Rising Demand for Private Label Supplements: Why Ayurveda is Leading the MarketEarlier record Ayurvedic third party manufacturer India Private label Ayurvedic products manufacturer — — In progress — 2 Why Pure Himalayan Shilajit Resin is the Fastest Growing Natural Energy Supplement TodayEarlier record Shilajit manufacturer in India Private label Shilajit manufacturer Pure Himalayan Shilajit resin Best Shilajit Manufacture — — In progress — 3 Why Global Brands Choose an Ayurvedic Products Exporter in India for Ashwagandha ManufacturingEarlier record ashwagandha manufacturer Ashwagandha gummies manufacturer ashwagandha capsules — — In progress — 4 Capsules vs. Powders: Sourcing from a Premier Moringa Supplement ManufacturerEarlier record moringa powder for energy Moringa supplement manufacturer moringa capsules — — In progress — 5 Why Global Brands Partner with an Ayurvedic Products Exporter in India for Moringa ManufacturingEarlier record Best herbal supplements Ayurvedic supplements online Ayurvedic products online Herbal products manufacturer — — In progress —",
+  "api": [
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:team_members ?select,limit [200]",
+   "GET REST:brands ?select,name,limit [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/get_blog_v2_brand_ref {_name} [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:blog_topic_generation_v2 ?select,brand_id,order,limit [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:fetch-execution-blogs [200]"
+  ]
+ },
+ "/execution/meta-tags": {
+  "url": "/execution/meta-tags",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Meta Tags"
+  ],
+  "tabs": [],
+  "buttons": [
+   "November 2026"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Meta Tags Meta Tags Manage and optimize your meta tags to improve search visibility. November 2026 Total Pages 0 November 2026 Approved 0 0% Pending Approval 0 0% Needs Update 0 0% 0 items for November 2026 No meta tags for November 2026 yet.",
+  "api": [
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET REST:brands ?select,name,limit [200]",
+   "POST REST:rpc/is_meta_tag_internal [200]",
+   "GET AUTH:user [200]",
+   "GET REST:brands ?select,username_api,limit [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "POST REST:rpc/get_blog_v2_brand_ref {_name} [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET REST:meta_tag_column_layouts ?select,brand_id [200]",
+   "GET REST:meta_tag_items ?select,brand_id,order,limit [200]",
+   "GET REST:meta_tag_notify_state ?select,brand_id,month [200]"
+  ]
+ },
+ "/execution/image-alt": {
+  "url": "/execution/image-alt",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Image Alt"
+  ],
+  "tabs": [],
+  "buttons": [
+   "November 2026",
+   "All statuses",
+   "Notify"
+  ],
+  "labels": [],
+  "th": [
+   "Website Page URL",
+   "Image URL",
+   "Current ALT",
+   "Suggested ALT",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Image Alt Image Alt Manage image ALT text for Demo November 2026 All statuses Website Page URL Image URL Current ALT Suggested ALT Status Comment No Image ALT rows for November 2026 yet. Notify",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET REST:execution_image_alt_records ?select,order,limit [200]"
+  ]
+ },
+ "/execution/schema-markup": {
+  "url": "/execution/schema-markup",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Schema Markup"
+  ],
+  "tabs": [],
+  "buttons": [
+   "November 2026",
+   "Notify"
+  ],
+  "labels": [],
+  "th": [
+   "#",
+   "Website Page URL",
+   "Missing Schema",
+   "Recommended Schema",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Schema Markup Schema Markup Plan, review and track structured data for every page. November 2026 Total Pages 0 November 2026 Approved 0 0% Approval Pending 0 0% Disapproved 0 0% # Website Page URL Missing Schema Recommended Schema Status Comment No schema markup rows for November 2026. Notify",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET REST:execution_schema_markup_records ?select,order,limit [200]"
+  ]
+ },
+ "/execution/internal-linking": {
+  "url": "/execution/internal-linking",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Internal Linking"
+  ],
+  "tabs": [],
+  "buttons": [
+   "November 2026",
+   "All statuses",
+   "Notify"
+  ],
+  "labels": [],
+  "th": [
+   "Page URL",
+   "Anchor Text",
+   "Interlinking To",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Internal Linking Internal Linking Manage internal link recommendations for Demo November 2026 All statuses Page URL Anchor Text Interlinking To Status Comment No internal links for November 2026 yet. Notify",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:execution_internal_linking ?select,order,limit [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/execution/faq-suggestion": {
+  "url": "/execution/faq-suggestion",
+  "title": "DareAISearch Platform",
+  "h": [
+   "FAQ Suggestion"
+  ],
+  "tabs": [],
+  "buttons": [
+   "November 2026",
+   "All statuses",
+   "Notify"
+  ],
+  "labels": [],
+  "th": [
+   "Page URL",
+   "Suggested Question",
+   "Suggested Answer",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra FAQ Suggestion FAQ Suggestion Manage FAQ suggestions for Demo November 2026 All statuses Page URL Suggested Question Suggested Answer Status Comment No FAQ suggestions for November 2026 yet. Notify",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET REST:execution_faq_suggestions ?select,order,limit [200]"
+  ]
+ },
+ "/execution/youtube": {
+  "url": "/execution/youtube",
+  "title": "DareAISearch Platform",
+  "h": [
+   "YouTube"
+  ],
+  "tabs": [],
+  "buttons": [
+   "November 2026",
+   "All statuses",
+   "Notify"
+  ],
+  "labels": [],
+  "th": [
+   "Keyword",
+   "Optimized Title",
+   "Optimized Description",
+   "Optimized Tags",
+   "File Name",
+   "Thumbnail Name",
+   "First Comment",
+   "Playlist",
+   "Video URL",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra YouTube YouTube Manage YouTube video recommendations for Demo November 2026 All statuses Keyword Optimized Title Optimized Description Optimized Tags File Name Thumbnail Name First Comment Playlist Video URL Status Comment No YouTube rows for November 2026 yet. Notify",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/current_user_brand_name [200]",
+   "GET REST:youtube_column_layouts ?select,brand_name [200]",
+   "GET AUTH:user [200]",
+   "GET REST:execution_youtube_records ?select,source,order,limit [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/execution/profile-citation": {
+  "url": "/execution/profile-citation",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Profile Citation"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Retry",
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Link",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Profile Citation Profile Citation 0 citations Sheet updates could not be fetched. Saved citations are shown. Retry Link Status Comment No profile citations for November 2026 yet. Notify team (0)",
+  "api": [
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST FN:import-profile-citation {brand_name} [403]",
+   "GET AUTH:user [200]",
+   "POST FN:send-profile-citation-review-email {action,brand_name,month} [403]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET REST:execution_profile_citation_records ?select,order,offset,limit [200]"
+  ]
+ },
+ "/execution/guest-post": {
+  "url": "/execution/guest-post",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Guest Post"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Links",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Guest Post Guest Post 0 guest posts Links Status Comment No guest posts for November 2026 yet. Notify team (0)",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "POST FN:import-guest-post {brand_name} [403]",
+   "GET REST:execution_guest_post_records ?select,order,limit [200]",
+   "POST FN:send-guest-post-review-email {action,brand_name,month} [403]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/execution/web-two": {
+  "url": "/execution/web-two",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Web 2.0"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Links",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Web 2.0 Web 2.0 0 links Links Status Comment No Web 2.0 links for November 2026 yet. Notify team (0)",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "POST FN:import-web-two {brand_name} [403]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:execution_web2_records ?select,order,limit [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:send-web-two-review-email {action,brand_name,month} [403]"
+  ]
+ },
+ "/execution/online-communities": {
+  "url": "/execution/online-communities",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Listing in Online Communities"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Links",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Listing in Online Communities Listing in Online Communities 0 links Links Status Comment No community listings for November 2026 yet. Notify team (0)",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST FN:import-online-communities {brand_name} [403]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:execution_listing_online_communities_records ?select,order,limit [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:send-online-communities-review-email {action,brand_name,month} [403]"
+  ]
+ },
+ "/execution/social-citation": {
+  "url": "/execution/social-citation",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Social Citation"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Social Citation Social Citation 0 links Notify team (0)",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST FN:import-social-citation {brand_name} [403]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:send-social-citation-review-email {action,brand_name,month} [403]",
+   "GET REST:execution_social_citation_records ?select,order,limit [500]"
+  ]
+ },
+ "/execution/classified": {
+  "url": "/execution/classified",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Classified"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Links",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Classified Classified 0 links Links Status Comment No classified links for November 2026 yet. Notify team (0)",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST FN:send-classified-review-email {action,brand_name,month} [403]",
+   "POST FN:import-classified {brand_name} [403]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET REST:execution_classified_records ?select,order,limit [200]"
+  ]
+ },
+ "/execution/reddit": {
+  "url": "/execution/reddit",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Reddit/Quora"
+  ],
+  "tabs": [],
+  "buttons": [
+   "November 2026"
+  ],
+  "labels": [],
+  "th": [
+   "Question",
+   "Answer",
+   "Live Link"
+  ],
+  "text": "DareAISearch Herbal Chakra Reddit/Quora Reddit/Quora 0 entries for November 2026 November 2026 Question Answer Live Link No entries for November 2026.",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET REST:execution_reddit_quora_records ?select,brand_name,order,limit [200]"
+  ]
+ },
+ "/execution/image-submission": {
+  "url": "/execution/image-submission",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Image Submission"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Links",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Image Submission Image Submission 0 links Links Status Comment No image submissions for November 2026 yet. Notify team (0)",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:import-image-submission {brand_name} [403]",
+   "POST FN:send-image-submission-review-email {action,brand_name,month} [403]",
+   "GET REST:execution_image_submission_records ?select,order,limit [200]"
+  ]
+ },
+ "/execution/directories": {
+  "url": "/execution/directories",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Directories"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Links",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Directories Directories 0 links Links Status Comment No directories for November 2026 yet. Notify team (0)",
+  "api": [
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET REST:execution_directories_records ?select,order,limit [200]",
+   "POST FN:import-directories {brand_name} [403]",
+   "POST FN:send-directories-review-email {action,brand_name,month} [403]"
+  ]
+ },
+ "/execution/ppt-pdf-submission": {
+  "url": "/execution/ppt-pdf-submission",
+  "title": "DareAISearch Platform",
+  "h": [
+   "PPT/PDF Submission"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Links",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra PPT/PDF Submission PPT/PDF Submission 0 links Links Status Comment No PPT/PDF submissions for November 2026 yet. Notify team (0)",
+  "api": [
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:import-ppt-pdf-submission {brand_name} [403]",
+   "POST FN:send-ppt-pdf-review-email {action,brand_name,month} [403]",
+   "GET REST:execution_ppt_pdf_submission_records ?select,order,limit [200]"
+  ]
+ },
+ "/execution/community-reviews": {
+  "url": "/execution/community-reviews",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Reviews on Online Communities"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Notify team (0)"
+  ],
+  "labels": [],
+  "th": [
+   "Review",
+   "Link",
+   "Status",
+   "Comment"
+  ],
+  "text": "DareAISearch Herbal Chakra Reviews on Online Communities Reviews on Online Communities 0 reviews Review Link Status Comment No reviews for November 2026 yet. Notify team (0)",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:execution_review_online_communities_records ?select,order,limit [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "POST FN:import-community-reviews {brand_name} [403]",
+   "POST FN:send-community-reviews-review-email {action,brand_name,month} [403]"
+  ]
+ },
+ "/deliverables/scope-of-work": {
+  "url": "/deliverables/scope-of-work",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Scope of Work"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Refresh"
+  ],
+  "labels": [],
+  "th": [
+   "TASK",
+   "PROJECTS",
+   "TIME TAKEN",
+   "WORK DONE FOR",
+   "RESPONSIBILITY",
+   "STATUS"
+  ],
+  "text": "DareAISearch Herbal Chakra Scope of Work Scope of Work Monthly task plan and deliverable commitments Refresh TOTAL TASKS 36 COMPLETED 0 IN PROGRESS 0 PENDING 0 TASK PROJECTS TIME TAKEN WORK DONE FOR RESPONSIBILITY STATUS All clients previous months work check All Projects 2-Nov-26 pending — — Prepare clients report All Projects 3-Nov-26 Work in Progress — — Share the reports with managers, Poc, VP & COO All Projects 3-Nov-26 Work in Progress — — Identify the focus keywords, Prompts and Pages to work on All Projects 4-Nov-26 Completed — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 4-Nov-26 — — — Finalise the On Page Blog topics and share with clients for Approval All Projects 5-Nov-26 — — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 10-Nov-26 — — — On Page Suggestions All Projects 10-Nov-26 — — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 11-Nov-26 — — — Schemas creation and share with clients All Projects 11-Nov-26 — — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 12-Nov-26 — — — Content Audit and finalise the pages and share with content writer All Projects 12-Nov-26 — — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 13-Nov-26 — — — Share the approved blog topics with content writer All Projects 13-Nov-26 — — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 16-Nov-26 — — — Share the On Page Suggestions with content writer All Projects 17-Nov-26 — — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 17-Nov-26 — — — XML Sitemap & Robots Txt and Manual updation any if required All Projects 18-Nov-26 — — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 18-Nov-26 — — — Outreach the Paid Backlinks Sites All Projects 19-Nov-26 — — — Work on Off Page Backlinks ( 60 Backlinks) All Projects 19",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]",
+   "GET FN:fetch-scope-of-work ?brand [200]"
+  ]
+ },
+ "/reporting/monthly": {
+  "url": "/reporting/monthly",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Monthly Report",
+   "July 2026"
+  ],
+  "tabs": [],
+  "buttons": [
+   "2026",
+   "View Report"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Reporting Monthly Report Monthly Report 1 report available 2026 July 2026 Monthly Report View Report",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:monthly_report_submissions ?select,order,limit,brand_name [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "POST FN:fetch-monthly-reports [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/insightful-blogs": {
+  "url": "/insightful-blogs",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Insightful Blogs",
+   "Google Is Making AI Search Links More Visible. Here's What It Means for Brands.",
+   "Festive Shopping Is Becoming AI-Led: What Indian D2C Brands Should Do Now",
+   "Google Search Console Can Now Measure Multimodal Search: Why Visual Discovery Just Became a First-Class SEO Metric",
+   "ChatGPT Changed What It Cites: Why Building GEO Around Any One Source Is Dangerous",
+   "Google Is Changing Local Search in Europe: What Aggregator and Supplier Units Mean for Brands",
+   "Google Search Is Becoming More Audience-Driven: Why Search Profiles and Preferred Sources Matter for Brands",
+   "Gemini 3.8 Is Another Sign the Search Query Is Becoming a Conversation",
+   "Does GEO Actually Drive Revenue? Connecting AI Visibility to Traffic, Leads and Sales",
+   "AI Visibility Is Becoming a CMO Metric. But What Should Brands Actually Measure?",
+   "ChatGPT Ads Are Here. Why Organic AI Visibility Matters More Than Ever.",
+   "Google Just Confirmed: Your Google Business Profile Matters for AI Search",
+   "Your Brand May Rank on GPT-5 and Disappear on GPT-6. Here's Why.",
+   "Google Changed How It Reads JSON-LD: What Brands Need to Fix in Their Structured Data",
+   "Claude Is Watermarking AI-Generated Text. What Does This Mean for SEO and GEO?",
+   "Google Search Console Now Tracks Instagram, TikTok, X and YouTube: What It Means for Brand Discovery",
+   "The New Borrower Journey: How AI Search Is Reshaping Digital Lending Discovery",
+   "Why Consumers Are Asking ChatGPT Before Buying Supplements",
+   "The AI Search Playbook for Nutraceutical & Supplement Brands",
+   "The Brand Recommendation Gap: Why Consumers See Your Competitor First in AI Search",
+   "Google Analytics Is Adding Google Business Profile Data: Why This Matters for Local Search and AI Visibility",
+   "Google Search Profiles: Why Google's New Publisher and Creator Update Is a Big Signal for AI Search Visibility",
+   "Google Search Console Adds Generative AI Performance Report: What It Means for Brands",
+   "robots.txt, sitemap.xml, Schema & llms.txt: Website Files Every Brand Should Know",
+   "How to Create an llms.txt File for Your Website: Step-by-Step Guide",
+   "What is llms.txt? Complete Guide for AI Search and AI Agents",
+   "From SEO to AI Agent Readiness: What Chrome, WebMCP and llms.txt Mean for Brands",
+   "Google's New AI Mode Ads: The Beginning of Advertising Inside AI-Led Decisions",
+   "Is Your Brand Ready for AI Search? A 2026 Readiness Checklist After Google I/O",
+   "Universal Cart, UCP, and Agentic Payments: Why Shopping Is Moving Inside AI Search",
+   "Search Agents and Generative UI: Why Google Search Will No Longer Look the Same for Everyone",
+   "Ask Maps and Local AI Search: The New Discovery Layer for Stores, Clinics, Restaurants, and Local Brands",
+   "Ask YouTube Is Coming: Why Video SEO Is Becoming AI Search Optimization",
+   "AI Overviews at 2.5 Billion Users: Why AI Citations Are Becoming the New Rankings",
+   "AI Mode Has Crossed 1 Billion Users: Why Brands Must Move Beyond Keyword SEO",
+   "Google I/O 2026 Confirms It: Search Is Becoming an AI Decision Layer",
+   "Google's Official AI Optimization Guide Confirms It: SEO Is Evolving Into GEO",
+   "Google Analytics Now Tracks AI Assistant Traffic: A Big Validation for AI Search Visibility",
+   "SearchScore™ is Live on Product Hunt: Help Us Take AI Search Visibility to the World",
+   "Google's New AI Overview Updates: Why Original Content, Citations & Brand Visibility Matter More Than Ever"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Refresh"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Insightful Blogs Insightful Blogs Refresh Google Is Making AI Search Links More Visible. Here's What It Means for Brands. October 21, 2026 • DareAISearch Understand Google’s October 2026 AI Mode and AI Overviews link changes, rollout versus tests, brand implications, and a practical 30-day action plan. Read More Festive Shopping Is Becoming AI-Led: What Indian D2C Brands Should Do Now October 6, 2026 • DareAISearch Indian festive shopping is becoming AI-led. Learn how D2C brands should improve discovery, product data, reviews, comparisons and conversion for AI shopping. Read More Google Search Console Can Now Measure Multimodal Search: Why Visual Discovery Just Became a First-Class SEO Metric September 25, 2026 • DareAISearch Google Search Console can now report traffic from Lens, Circle to Search, image uploads and Search this image. Here is what brands should measure and optimize. Read More ChatGPT Changed What It Cites: Why Building GEO Around Any One Source Is Dangerous September 22, 2026 • DareAISearch ChatGPT citation behavior changed sharply in August 2026. Learn why single-source GEO strategies are fragile and how to build citation resilience. Read More Google Is Changing Local Search in Europe: What Aggregator and Supplier Units Mean for Brands September 19, 2026 • DareAISearch Google has expanded aggregator and supplier units to local business queries in the EEA. Here is what brands, directories and local businesses should. Read More Google Search Is Becoming More Audience-Driven: Why Search Profiles and Preferred Sources Matter for Brands September 17, 2026 • DareAISearch Google is giving users more control over which sources they see through Search Profiles and Preferred Sources. Here is what brands should understand and do. Read M",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "GET REST:knowledge_articles ?select,status,source_type,order,limit [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ },
+ "/interactive-webinars": {
+  "url": "/interactive-webinars",
+  "title": "DareAISearch Platform",
+  "h": [
+   "Interactive Webinars",
+   "The 90-Day Playbook to Grow Your Revenue From AI Search",
+   "2026 & Beyond (Healthcare Edition): How AI Search Is Transforming Patient Discovery, Trust & Decisions",
+   "How AI Search Is Changing Discovery & Decision-Making for D2C, Retail & E-commerce Brands",
+   "Schema, Entities & Knowledge Graphs: The New Technical SEO Stack",
+   "Building AI-First Visibility: From Mentions → Citations → Choices",
+   "The Rise of AI Search: How Consumer Discovery Is Changing Forever"
+  ],
+  "tabs": [],
+  "buttons": [
+   "Watch Now"
+  ],
+  "labels": [],
+  "th": [],
+  "text": "DareAISearch Herbal Chakra Interactive Webinars Interactive Webinars 6 18th February 2026 30 minutes The 90-Day Playbook to Grow Your Revenue From AI Search SJ Siddhant Jain Vice President - Growth, Digidarts SC Sukrit Chopra AVP - Media Strategy What was covered: • A clear 90-day execution roadmap • A working model of how AI search drives revenue • Clarity on what matters: GEO vs AEO vs Traditional SEO Watch Now 5 21st January 2026 30 minutes 2026 & Beyond (Healthcare Edition): How AI Search Is Transforming Patient Discovery, Trust & Decisions SJ Siddhant Jain Vice President - Growth, Digidarts SC Sukrit Chopra AVP - Media Strategy What was covered: • How the healthcare patient journey is evolving in the AI search era • How AI platforms evaluate and recommend healthcare brands • Where ChatGPT Health fits into the broader AI search landscape • Why traditional SEO and ads alone are no longer enough • How healthcare brands can prepare for AI-driven trust and discovery in 2026 Watch Now 4 7th January 2026 30 minutes How AI Search Is Changing Discovery & Decision-Making for D2C, Retail & E-commerce Brands SJ Siddhant Jain Vice President - Growth, Digidarts SC Sukrit Chopra AVP - Media Strategy What was covered: • How AI search engines influence buying decisions • The discovery-to-decision journey in AI search • Building trust signals for e-commerce brands • Conversion rate impact of AI visibility • Actionable strategies for D2C & retail brands Watch Now 3 16th December 2025 30 minutes Schema, Entities & Knowledge Graphs: The New Technical SEO Stack SJ Siddhant Jain Vice President - Growth, Digidarts SC Sukrit Chopra AVP - Media Strategy What was covered: • Translate web content for AI models using Schema markup • Secure your brand identity in the Knowledge Graph • Engineer ",
+  "api": [
+   "POST REST:rpc/has_role {_user_id,_role} [200]",
+   "GET REST:user_subscriptions ?select,user_id [200]",
+   "GET REST:profiles ?select,user_id [200]",
+   "POST REST:rpc/is_seo_team_member [200]",
+   "POST REST:rpc/is_schema_markup_manager [200]",
+   "GET AUTH:user [200]",
+   "GET REST:linked_user_accounts ?select,user_id [200]",
+   "GET REST:notifications ?select,user_id,resolved_at,order,limit [200]"
+  ]
+ }
+}
