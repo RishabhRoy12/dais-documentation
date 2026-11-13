@@ -12,7 +12,7 @@ Every page under `/analytics/*` renders inside the same application shell: a **t
 |---|---|---|
 | Sidebar toggle | Icon button (panel icon), far left | Collapses the sidebar to an icon-only rail (about 47 px wide); click again to expand. Sidebar tooltip/label: "Toggle Sidebar" |
 | DARE AI SEARCH logo | Logo | Branding only |
-| Brand chip | Avatar (brand initial) + brand name | Shows the active brand. Clicking it does not open a menu for this account |
+| Brand chip | Avatar (brand initial) + brand name | Shows the active brand. For an account with **one** brand it is a plain label (clicking does nothing). For an account with **several** brands it becomes a **dropdown with a chevron** listing the brands (e.g. `{Brand A}`, `{Brand B}`, `{Brand C}`); choosing one reloads the app for that brand and all page calls then send `brandOverride: "{Brand}"`. The choice is kept while navigating and is reset when a new browser session starts (the default brand is shown again) |
 | Theme switch | Toggle switch with sun and moon icons (`aria-label` "Toggle theme") | Switches between dark (default) and light theme; applies the `light` class on the root element |
 | Notifications | Bell icon button | Opens a popover (see 1.1) |
 | User avatar | Round button with user initial | Opens the user menu (see 1.2) |
@@ -92,3 +92,19 @@ These run for every authenticated page (Supabase REST and RPC):
 | `POST rpc/is_schema_markup_manager` | Schema-markup manager permission |
 | `GET linked_user_accounts` (select `user_id`) | Linked accounts |
 | `GET notifications` (select `user_id`, `resolved_at`, order, limit) | Bell popover data |
+
+---
+
+## 6. Per-brand and per-role differences in the shell
+
+The shell is not identical for every brand or every account. These differences were observed with one account that has several brands:
+
+| Difference | What was seen |
+|---|---|
+| **Pages shown in ANALYTICS** | Each brand only lists the analytics pages enabled for it. Observed: one brand lacked **Local Listings**, another lacked **YouTube Analytics** and **Product Leaderboard**, while a third showed all thirteen. A page that is not enabled is not in the sidebar, and opening its URL directly **redirects to Overview** |
+| **Locked items** | A page that exists but is not included in the brand's plan shows a **lock icon** at the right of its sidebar item and greyed text (observed on **Search Console** for one brand) |
+| **Footer badges** | The two badges at the bottom of the sidebar change with the account and brand plan: first badge is the role (**Pro User** or **Sub-Admin**), second is the plan tier (**DAIS Growth** or **DAIS Pro**) |
+| **Extra sidebar item** | **Publisher Intelligence** appears under INTELLIGENCE for some accounts/roles |
+| **Sub-Admin view of pages** | With the **Sub-Admin** role some pages show extra admin controls and omit the generated insight line and Recommended Actions. Seen on Keyword Ranking (extra **Add Rankings** and **Download ({Month YYYY})** buttons) and Prompt Ranking (ChatGPT-only layout). On Overview, brands with e-commerce data show a **Revenue** metric instead of **Key events** and a **"Data as of {YYYY-MM-DD}"** banner. The page docs in this folder describe the **Pro User** view unless stated otherwise |
+
+How the plan, role and brand settings map to these differences is not documented here.
