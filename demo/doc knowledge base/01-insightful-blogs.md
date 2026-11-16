@@ -7,7 +7,7 @@
 | **Subtitle** | None |
 | **Breadcrumb** | DareAISearch › {Brand} › Insightful Blogs |
 | **Sidebar location** | KNOWLEDGE BASE group → Insightful Blogs (1st of 2 items) |
-| **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../updated analytics/00-global-layout.md](../updated%20analytics/00-global-layout.md) |
+| **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
 > Documented from the live app, **Sub-Admin** view, on three brands. Titles, dates and counts are placeholders such as `{Blog title}` and `{n}`. Text in quotes is exact on-screen text. The articles themselves live on the DareAISearch website; only the cards were documented, not the articles.
 

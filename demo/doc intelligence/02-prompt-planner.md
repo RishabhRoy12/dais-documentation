@@ -7,7 +7,7 @@
 | **Subtitle** | "Discover related topics, prompts, brands and sources" |
 | **Breadcrumb** | DareAISearch › {Brand} › Analytics › Prompt Planner **Beta** |
 | **Sidebar location** | INTELLIGENCE group → Prompt Planner (2nd item, **BETA** badge) |
-| **Shared shell** | Documented in [../updated analytics/00-global-layout.md](../updated%20analytics/00-global-layout.md) |
+| **Shared shell** | Documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
 > Documented from the live app. The page was seen with **no research run**, so the column layout of every tab is confirmed but **filled rows are not captured**. Run Research was not pressed. Text in quotes is exact on-screen text.
 

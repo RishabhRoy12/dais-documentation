@@ -7,7 +7,7 @@
 | **Subtitle** | "Discover, evaluate, and order placements on premium publisher websites — powered by AI." |
 | **Breadcrumb** | DareAISearch › {Brand} › Publisher Intelligence |
 | **Sidebar location** | INTELLIGENCE group → Publisher Intelligence (6th item). **Shown only for some accounts and roles** (see global layout, section 6); it was present for the Sub-Admin account and for one Pro User account |
-| **Shared shell** | Documented in [../updated analytics/00-global-layout.md](../updated%20analytics/00-global-layout.md) |
+| **Shared shell** | Documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
 > Documented from the live app. All three tabs were opened on three brands. The marketplace was **empty for every brand** ("No publishers match your filters"), so a publisher card and the order flow are **not captured**. Text in quotes is exact on-screen text.
 

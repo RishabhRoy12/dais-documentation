@@ -7,7 +7,7 @@
 | **Subtitle** | None |
 | **Breadcrumb** | DareAISearch › {Brand} › Reporting › Monthly Report |
 | **Sidebar location** | REPORTING group → Monthly Report (the only item in the group) |
-| **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../updated analytics/00-global-layout.md](../updated%20analytics/00-global-layout.md) |
+| **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
 > Documented from the live app, **Sub-Admin** view, on three brands. Text in quotes is exact on-screen text. Months, years and counts are placeholders such as `{Month YYYY}` and `{n}`. Only the first slide of one report was looked at, so the content of the report decks beyond their cover slide is **not documented**.
 

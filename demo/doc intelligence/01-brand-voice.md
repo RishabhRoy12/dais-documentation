@@ -7,7 +7,7 @@
 | **Subtitle** | "AI-powered brand voice generation and content review" |
 | **Breadcrumb** | DareAISearch › {Brand} › Brand Voice |
 | **Sidebar location** | INTELLIGENCE group → Brand Voice (1st item) |
-| **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../updated analytics/00-global-layout.md](../updated%20analytics/00-global-layout.md) |
+| **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
 > Documented from the live app. The full page below is the **Sub-Admin** view, captured on a brand that already has a generated brand voice and one saved content review. A **Pro User** view of a brand with no voice was captured earlier and is described in section 7, because the tab name and layout differ. Brand names, dates and counts are placeholders such as `{n}`. Text in quotes is exact on-screen text. The Generate, Regenerate and Review actions were **not run**, so what they do while running is not documented.
 

@@ -7,7 +7,7 @@
 | **Subtitle** | None |
 | **Breadcrumb** | DareAISearch › {Brand} › Interactive Webinars |
 | **Sidebar location** | KNOWLEDGE BASE group → Interactive Webinars (2nd of 2 items) |
-| **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../updated analytics/00-global-layout.md](../updated%20analytics/00-global-layout.md) |
+| **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
 > Documented from the live app, **Sub-Admin** view. Titles, dates, names and counts are placeholders such as `{Webinar title}` and `{n}`. Text in quotes is exact on-screen text. The webinar recordings and the registration pages are on a separate webinar site and were **not** documented.
 

@@ -7,7 +7,7 @@
 | **Subtitle** | The brand name in capitals, for example "{BRAND}" |
 | **Breadcrumb** | DareAISearch › {Brand} › Blog Generator |
 | **Sidebar location** | INTELLIGENCE group → Blog Generator (3rd item) |
-| **Shared shell** | Documented in [../updated analytics/00-global-layout.md](../updated%20analytics/00-global-layout.md) |
+| **Shared shell** | Documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
 > Documented from the live app, **Sub-Admin** view. One brand had a single request and two brands had none. The New request dialog and the request drawer were opened but **nothing was submitted, approved or rejected**, so the steps after approval (assigning the research, proposing or generating a topic, the blog itself) are **not captured**. Names, emails, dates and counts are placeholders such as `{n}`. Text in quotes is exact on-screen text.
 

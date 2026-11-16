@@ -7,7 +7,7 @@
 | **Subtitle** | None in the header; a tagline sits in the page body |
 | **Breadcrumb** | DareAISearch › {Brand} › FAQ Creator |
 | **Sidebar location** | INTELLIGENCE group → FAQ Creator (4th item) |
-| **Shared shell** | Documented in [../updated analytics/00-global-layout.md](../updated%20analytics/00-global-layout.md) |
+| **Shared shell** | Documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
 > Documented from the live app. The page and its create form were captured on three brands. None had saved FAQ sets, and **Create FAQs was not submitted**, so the generated output and the saved-set list are **not captured**. Text in quotes is exact on-screen text.
 
