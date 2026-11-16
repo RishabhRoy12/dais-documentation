@@ -60,7 +60,7 @@ Each menu item has a leading icon. In the collapsed rail only the icons are show
 
 | Element | Behaviour |
 |---|---|
-| Breadcrumb | `DareAISearch › {Brand} › Analytics › {Page}`; the current page is bold and not a link |
+| Breadcrumb | `DareAISearch › {Brand} › Analytics › {Page}`; the current page is bold and not a link. On Intelligence pages the `Analytics` step is left out (`DareAISearch › {Brand} › {Page}`), except Prompt Planner, which keeps it (`… › Analytics › Prompt Planner Beta`) |
 | Page title and subtitle | Left side, below the breadcrumb |
 | Controls (right side) | Page-specific filters (on Overview: Compare toggle, date preset, date picker) |
 

@@ -127,6 +127,7 @@ Footer row **Total**: sums of the columns above; bounce rate is the total-level 
 | **NEW** tag | Small teal pill before the path: the page received AI traffic in this period but not in the previous period |
 | `(not set)` | Landing page value when GA4 has no page for the session |
 | Scrolling | Body scrolls vertically inside a box of max height 400 px; header row and **Grand total** row stay pinned |
+| **Show more** | When the brand has many landing pages, only the first **200** rows load and a button **"Show more (200 of {total} shown)"** sits at the end of the list, above the Grand total row. Seen on a brand with over 1,000 landing pages; a brand with 200 or fewer pages would not need the button |
 | Footer | **Grand total** row (sums) |
 | Search behaviour | Filters rows by text contained in the landing-page path. A row **"Search total ({n} results)"** with the sums for matching rows appears above the Grand total. With no match it shows "Search total (0 results)" with all zeros. Clearing the box restores all rows |
 | Key events cell | Rendered as a teal value (link style) |
@@ -156,6 +157,7 @@ Footer row **Total**: sums of the columns above; bounce rate is the total-level 
 | **NEW** tag | Page received organic traffic in this period but not in the previous one |
 | Missing GSC data | Cells show **—** when the page is not found in Search Console |
 | Scrolling | Max height 400 px, vertical scroll, header and Grand total pinned |
+| **Show more** | Same as the AI table: the first **200** rows load, then a button **"Show more (200 of {total} shown)"** appears when there are more |
 | Footer | **Grand total** (sums for counts; CTR is the overall ratio; Position shows **—**) |
 | Footnote | "— = page not found in Search Console for this period." |
 

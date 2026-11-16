@@ -47,7 +47,7 @@ A full-width, thin rounded bar with a clock icon and bold text: **"Data as of {Y
 | Part | Details |
 |---|---|
 | Status icon | Teal circle with a check mark (left). Every row shows this completed icon |
-| Text | One sentence, always starting with **"DareAISearch {Team/Engine name}"** followed by what was done, e.g. "DareAISearch {Engine} {completed/published/optimized/...} {work description}." |
+| Text | One sentence, normally starting with **"DareAISearch {Team/Engine name}"** followed by what was done, e.g. "DareAISearch {Engine} {completed/published/optimized/...} {work description}." A few rows have **no team name** and start with the action directly after "DareAISearch", e.g. "DareAISearch Optimize images and internal links." or "DareAISearch generate Monthly Report for {Brand}." |
 | Date | Right-aligned, ordinal short format **"{D(th) Mon, YYYY}"**, e.g. `{4th Aug, 2026}` |
 
 - Rows are ordered **newest first** by date; several rows can share a date.
@@ -66,6 +66,14 @@ A full-width, thin rounded bar with a clock icon and bold text: **"Data as of {Y
 | Platform QA | Validation and resolution of Search Console error signals |
 | Schema | Structured-data and content-enhancement recommendations |
 | Intelligence | Google Business Profile and YouTube opportunity analysis, keyword-cluster and prompt strategy |
+| Authority Engine | Backlink building across client properties |
+| Prompt Lab | Finalising prompt and keyword sets, tracking prompt visibility rankings across AI engines |
+| Knowledge Graph | Amplifying citations, Reddit signals and review visibility |
+| SchemaKit | Content enhancement on collection pages, such as intent-aligned FAQ content |
+| FAQ Engine | FAQ recommendations for high-intent queries |
+| Workflow | Syncing and updating pending approval states |
+
+The last six names were seen on a second sampled brand (348 rows, going back about nine months) and were not in the first sample.
 
 ---
 
@@ -104,6 +112,6 @@ Shell calls (roles, subscription, notifications) are listed in [00-global-layout
 ## 6. Behaviour rules
 
 - **Brand scoped:** the feed is for the brand selected in the top bar.
-- **Order and range:** newest first; the list covers a rolling window of recent months (the sampled brand showed about two months, from `{D Mon YYYY}` to `{D Mon YYYY}`).
+- **Order and range:** newest first; the list covers a rolling window of recent months (one sampled brand showed about two months, another about nine months, from `{D Mon YYYY}` to `{D Mon YYYY}`; the window therefore differs by brand).
 - **Freshness:** the banner date comes from the data, so it can be earlier than today if no newer activity has been recorded.
 - **Read-only:** the page has no interaction other than scrolling the list.
