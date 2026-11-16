@@ -50,7 +50,7 @@ Cards are ordered **newest first** and wrap three to a row.
 The title and the thumbnail are **not** links; only **Read More** opens the article.
 
 ### 3.3 Date problem on one card
-The last card in the sampled list shows **"Invalid Date"** in place of its date. It is an article that has no usable publish date; such an article is listed at the **end** of the grid.
+The last card in the sampled list shows **"Invalid Date"** in place of its date (rechecked on the live app later: the list, the 58 cards and this card were unchanged). It is an article that has no usable publish date; such an article is listed at the **end** of the grid.
 
 ---
 

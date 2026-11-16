@@ -9,13 +9,13 @@
 | **Sidebar location** | KNOWLEDGE BASE group → Interactive Webinars (2nd of 2 items) |
 | **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [../doc analytics/00-global-layout.md](../doc%20analytics/00-global-layout.md) |
 
-> Documented from the live app, **Sub-Admin** view. Titles, dates, names and counts are placeholders such as `{Webinar title}` and `{n}`. Text in quotes is exact on-screen text. The webinar recordings and the registration pages are on a separate webinar site and were **not** documented.
+> Documented from the live app, **Sub-Admin** view, and rechecked after a fix to the Watch Now buttons. Titles, dates, names and counts are placeholders such as `{Webinar title}` and `{n}`. Text in quotes is exact on-screen text. The recordings are on YouTube and were **not** documented beyond the title of the one that was opened.
 
 ---
 
 ## 1. Purpose
 
-A library of DareAISearch's past webinars on AI search. Each card shows when the session ran, who presented, what it covered, and a **Watch Now** button that leads to the webinar site.
+A library of DareAISearch's past webinars on AI search. Each card shows when the session ran, who presented, what it covered, and a **Watch Now** button that opens the recording on YouTube.
 
 ---
 
@@ -46,12 +46,9 @@ Cards are ordered **newest first** and wrap three to a row; the cards in one row
 | **Watch Now** | Full-width outlined button with a play icon at the bottom of the card |
 
 ### 3.2 Watch Now behaviour
-| Card | What happens |
-|---|---|
-| Five older cards | The button is a link that opens the webinar site's registration page, `webinar.dareaisearch.com/meeting/register?sessionId={id}`, in a **new browser tab** |
-| Newest card | **Defect seen in the test:** the button is a plain button that moves the **same tab** to `/interactive-webinars/https:/webinar.dareaisearch.com/meeting/register?sessionId={id}`, an address that does not exist in the app. The page then shows **"404 · Oops! Page not found"** with a **Return to Home** link |
+On every card (all six) **Watch Now** is a link to that webinar's **YouTube video** (`youtu.be/{video id}`). It opens in a **new browser tab** and the platform stays open in the first tab. The newest card was clicked to confirm: it opened the video "{Webinar title} | Webinar #{n} - YouTube".
 
-So the newest webinar can't be opened from this page at the time of testing; the other five can.
+> Rechecked on the live app after a fix. Earlier the five older cards linked to a webinar registration page (`webinar.dareaisearch.com/meeting/register?sessionId={id}`) and the newest card's button moved the same tab to a non-existent address and showed "404 · Oops! Page not found". Neither behaviour is present now.
 
 ---
 
