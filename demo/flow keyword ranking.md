@@ -2,7 +2,7 @@
 
 > Page: **Analytics → Keyword Ranking** (`/analytics/keyword-ranking`). For the screen layout, tooltips and every on-screen label, see [doc analytics/05-keyword-ranking.md](doc%20analytics/05-keyword-ranking.md). This document explains only **how the data moves**: where it comes from, which calls the page makes, what each call returns, and which user action changes which block.
 >
-> **How this was checked:** the page was opened in the live app (internal Admin account) and its network calls were recorded for three moments: page load, changing the scan date, and sorting the table. Values below are placeholders such as `{n}` and `{D Month YYYY}`. Items marked **To confirm** were not visible from the browser (back-end internals).
+> **How this was checked:** the page was opened in the live app (a brand user, **Pro User** view) and its network calls were recorded for three moments: page load, changing the scan date, and sorting the table. Values below are placeholders such as `{n}` and `{D Month YYYY}`. Items marked **To confirm** were not visible from the browser (back-end internals).
 
 ---
 
