@@ -2,7 +2,7 @@
 
 **Notation:** A **scan date** = the date a set of citation results belongs to. A **citation** = an AI model (ChatGPT or Gemini) names the brand's website (or a competitor's) as a source in its answer to a tracked prompt. The **property ID** = the ID that links the brand to its data in Semrush and in GA4.
 
-**Starting point:** the approved prompts from `prompt selections.md`, tracked in Semrush (see `prompt ranking flow.md`).
+**Starting point:** the approved prompts from `../../prompt selections.md`, tracked in Semrush (see `04_prompt_ranking_flow.md`).
 
 **Goal:** the Citation Overview page shows whether and where AI models cite the brand's website. The page data is taken from **GA4**. GA4 gets its data from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
 
@@ -56,7 +56,7 @@ flowchart TD
 
 - The page data is taken from **GA4**.
 - GA4 gets the data from **Semrush**, matched by the brand's **property ID**, through the **Semrush API**.
-- The same source is used for the Sentiment Overview, the Reddit Overview and the Product Leaderboard (see `sentiment overview flow.md`, `reddit overview flow.md`, `product leaderboard flow.md`).
+- The same source is used for the Sentiment Overview, the Reddit Overview and the Product Leaderboard (see `07_sentiment_overview_flow.md`, `08_reddit_overview_flow.md`, `10_product_leaderboard_flow.md`).
 - The data updates **automatically**. There is no upload, no manual add and no CSV for this page.
 - The client cannot add or change any citation data.
 - The data is **brand scoped**.
@@ -81,7 +81,7 @@ Page details: `doc analytics/06-citation-overview.md`.
 
 ## Runbook: Client
 
-1. Finish prompt selection (see `prompt selections.md`).
+1. Finish prompt selection (see `../../prompt selections.md`).
 2. Open **Analytics → Citation Overview**.
 3. Use the domain filter, date range and ChatGPT / Gemini toggles on the chart. Use the toggle on the grid and click a ✓ row to see the cited URLs.
 4. The page updates automatically.

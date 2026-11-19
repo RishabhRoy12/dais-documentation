@@ -6,7 +6,7 @@
 
 **Goal:** once the client's X keywords are approved, the **assigned SEO team member or the Admin** adds the rank of each keyword (by hand or by CSV) **every Monday**, and the data is reflected on the client's Keyword Ranking page.
 
-This flow comes **after** the keyword selection process. See [keyword selections.md](keyword%20selections.md) for how the X keywords are approved. For how the Keyword Ranking page reads the data, see [Final keyword ranking.md](Final%20keyword%20ranking.md).
+This flow comes **after** the keyword selection process. See [keyword selections.md](../../keyword%20selections.md) for how the X keywords are approved. For how the Keyword Ranking page reads the data, see [05-keyword-ranking.md](../../doc%20analytics/05-keyword-ranking.md).
 
 The flow is shown in three diagrams: the overall journey for a new and an existing client, the two ways of adding rankings, and what happens after the rankings are saved.
 

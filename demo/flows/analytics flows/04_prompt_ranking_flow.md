@@ -4,7 +4,7 @@
 
 **Roles:** the **Client**, the **Assigned SEO team member**, the **Admin**, the **System**, and **Semrush**.
 
-**Starting point:** this flow begins when prompt selection is **Completed**, meaning the client has approved exactly X1 unique prompts and they are locked. How the prompts are selected is in `prompt selections.md`.
+**Starting point:** this flow begins when prompt selection is **Completed**, meaning the client has approved exactly X1 unique prompts and they are locked. How the prompts are selected is in `../../prompt selections.md`.
 
 **Goal:** the assigned SEO team member or the Admin gives the final approved prompts to **Semrush**. After that, the data in the Prompt Ranking section is **updated automatically every week** as per Semrush, and the client sees their visibility on ChatGPT and Gemini. Nobody has to fetch or type in the data.
 
@@ -118,7 +118,7 @@ The Prompt Ranking page was opened for one brand (Pro User view) and its calls w
 
 ## Runbook: Client
 
-1. Finish prompt selection (see `prompt selections.md`).
+1. Finish prompt selection (see `../../prompt selections.md`).
 2. Open **Analytics → Prompt Ranking** to see your visibility on ChatGPT and Gemini.
 3. The page updates automatically every week. A new scan date appears as a new column in the grid.
 

@@ -4,7 +4,7 @@
 
 **Notation:** A **concept** = a topic AI models associate with the brand (for example manufacturing, certifications, ingredients). **Sentiment** = positive, neutral or negative. The **property ID** = the ID that links the brand to its data in Semrush and in GA4.
 
-**Starting point:** the approved prompts from `prompt selections.md`, tracked in Semrush (see `prompt ranking flow.md`).
+**Starting point:** the approved prompts from `../../prompt selections.md`, tracked in Semrush (see `04_prompt_ranking_flow.md`).
 
 **Goal:** the page shows which concepts AI models associate with the brand, how often, and with what sentiment. The page data is taken from **GA4**. GA4 gets its data from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
 
@@ -74,7 +74,7 @@ flowchart TD
 
 ## Runbook: Client
 
-1. Finish prompt selection (see `prompt selections.md`).
+1. Finish prompt selection (see `../../prompt selections.md`).
 2. Open **Analytics → Concept Overview**.
 3. Pick a month to see the concepts and their sentiment.
 

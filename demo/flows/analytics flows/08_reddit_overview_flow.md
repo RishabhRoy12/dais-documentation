@@ -2,7 +2,7 @@
 
 **Notation:** A **subreddit** = a Reddit community. A **thread** = one Reddit post. A **scan date** = the date a set of results belongs to. The **property ID** = the ID that links the brand to its data in Semrush and in GA4.
 
-**Starting point:** the approved prompts from `prompt selections.md`, tracked in Semrush (see `prompt ranking flow.md`).
+**Starting point:** the approved prompts from `../../prompt selections.md`, tracked in Semrush (see `04_prompt_ranking_flow.md`).
 
 **Goal:** the page shows which subreddits and threads AI models cite when answering the brand's prompts. The page data is taken from **GA4**. GA4 gets its data from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
 
@@ -75,7 +75,7 @@ Page details: `doc analytics/08-reddit-overview.md`.
 
 ## Runbook: Client
 
-1. Finish prompt selection (see `prompt selections.md`).
+1. Finish prompt selection (see `../../prompt selections.md`).
 2. Open **Analytics → Reddit Overview**.
 3. Choose a model and a scan date to see the subreddits and threads.
 

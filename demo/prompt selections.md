@@ -4,7 +4,7 @@
 
 **Roles:** the **Client**, the **Assigned SEO team member** (the SEO team member assigned to the client), the **Admin**, and the **System**.
 
-**Goal:** the client approves exactly X1 unique prompts. Once X1 prompts are approved, the selection is **Completed**, the prompts are locked, and they move on to the **Prompt Ranking flow** (see `prompt ranking flow.md`).
+**Goal:** the client approves exactly X1 unique prompts. Once X1 prompts are approved, the selection is **Completed**, the prompts are locked, and they move on to the **Prompt Ranking flow** (see `flows/analytics flows/04_prompt_ranking_flow.md`).
 
 The flow is shown in three diagrams: the overall journey, how a batch of prompts is reviewed, and how the system validates and counts approved prompts.
 
@@ -43,7 +43,7 @@ flowchart TD
     MORE -->|"Client suggests more"| S2
     MORE -->|"SEO member gives another set"| S1
     Q -->|"Yes"| DONE(["Prompt selection COMPLETED<br/>approved prompts are locked"])
-    DONE --> NEXT(["Continue in the Prompt Ranking flow<br/>(prompt ranking flow.md)"])
+    DONE --> NEXT(["Continue in the Prompt Ranking flow<br/>(flows/analytics flows/04_prompt_ranking_flow.md)"])
 
     classDef stage fill:#eef6ff,stroke:#2b6cb0,color:#1a365d
     classDef decision fill:#fdf2f8,stroke:#b83280,color:#521b41
@@ -192,7 +192,7 @@ Permissions are checked by the platform for every read and write, in line with t
 5. The SEO team reviews your prompts. Check Approved Prompts and Rejected Prompts to see the result and any remark.
 6. If the approved count is still below X1, you can submit more prompts, or the SEO member gives another set. Repeat until X1 unique prompts are approved.
 7. When exactly X1 unique prompts are approved, the selection is **Completed** and the prompts are locked.
-8. Rankings for the approved prompts then appear on the Prompt Ranking page (see `prompt ranking flow.md`).
+8. Rankings for the approved prompts then appear on the Prompt Ranking page (see `flows/analytics flows/04_prompt_ranking_flow.md`).
 
 ## Runbook: Assigned SEO Team Member (and Admin)
 
@@ -201,7 +201,7 @@ Permissions are checked by the platform for every read and write, in line with t
 3. Do not approve more prompts than the remaining slots (X1 minus already approved).
 4. If the approved count is below X1 and the client has no more prompts to submit, give another set of suggestions. Keep doing this whenever required.
 5. Stop only when the system marks the selection **Completed** (X1 unique approved prompts).
-6. Continue with the Prompt Ranking flow: give the approved prompts to Semrush (see `prompt ranking flow.md`).
+6. Continue with the Prompt Ranking flow: give the approved prompts to Semrush (see `flows/analytics flows/04_prompt_ranking_flow.md`).
 
 ## Troubleshooting
 
