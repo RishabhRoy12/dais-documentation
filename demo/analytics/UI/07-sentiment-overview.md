@@ -1,12 +1,12 @@
-# Analytics → Concept Overview
+# Analytics → Sentiment Overview
 
 | | |
 |---|---|
 | **Route** | `/analytics/concepts` |
-| **Page title** | Concept Overview |
+| **Page title** | Sentiment Overview |
 | **Subtitle** | None |
-| **Breadcrumb** | DareAISearch › {Brand} › Analytics › Concept Overview |
-| **Sidebar location** | ANALYTICS group → Concept Overview (7th item) |
+| **Breadcrumb** | DareAISearch › {Brand} › Analytics › Sentiment Overview |
+| **Sidebar location** | ANALYTICS group → Sentiment Overview (7th item) |
 | **Shared shell** | Top bar, sidebar, breadcrumb and the Miss Daring assistant are documented in [00-global-layout.md](00-global-layout.md) |
 
 > Documented from the live app. This page is documented on its own; how its data connects to other pages is left for a later pass. All numbers, concept names and brand names are **placeholders such as `{n}`**, because they depend on the brand. Text in quotes is exact on-screen text.
@@ -25,7 +25,7 @@ This page has **no AI insight line and no Recommended Actions**.
 
 | # | Section | Contents |
 |---|---|---|
-| 1 | Page title | "Concept Overview" (no subtitle, no page-level date filter) |
+| 1 | Page title | "Sentiment Overview" (no subtitle, no page-level date filter) |
 | 2 | Model pill | A single teal pill labelled with the first enabled model (ChatGPT in the sample) |
 | 3 | Concepts Aggregated – {Model} | Month dropdown, sentiment key, concept table with bars |
 | 4 | Concepts by Brand | Snapshot date label, model dropdown, concept × brand table |

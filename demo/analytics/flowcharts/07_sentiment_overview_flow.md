@@ -1,4 +1,4 @@
-# Concept Overview Flow (Sentiment Overview)
+# Sentiment Overview Flow
 
 ## 1. Overall journey
 
@@ -6,7 +6,7 @@
 flowchart TD
     P(["Brand is linked to its<br/>property ID"])
     P --> S["Semrush API<br/>data fetched as per the property ID"]
-    S --> PG["Concept Overview page<br/>takes its data from Semrush"]
+    S --> PG["Sentiment Overview page<br/>takes its data from Semrush"]
 
     PG --> P1["Concepts Aggregated table<br/>mentions + positive / neutral / negative bars"]
     PG --> P2["Brand vs competitors table<br/>mentions per concept"]

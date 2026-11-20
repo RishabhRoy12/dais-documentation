@@ -1,6 +1,6 @@
-# Concept Overview Flow (Sentiment Overview)
+# Sentiment Overview Flow
 
-> Written for the **Concept Overview** page (`/analytics/concept-overview`, `doc analytics/07-concept-overview.md`). "Sentiment Overview" and "Concept Overview" are the same page.
+> Written for the **Sentiment Overview** page (`/analytics/concept-overview`, `analytics/UI/07-sentiment-overview.md`).
 
 **Notation:** A **concept** = a topic AI models associate with the brand (for example manufacturing, certifications, ingredients). **Sentiment** = positive, neutral or negative. The **property ID** = the ID that links the brand to its data in Semrush.
 
@@ -42,7 +42,7 @@ The client can only view the page. The client cannot add or change any data.
 
 ## Runbook: Client
 
-1. Open **Analytics → Concept Overview**.
+1. Open **Analytics → Sentiment Overview**.
 2. Pick a month to see the concepts and their sentiment.
 
 ## Troubleshooting
