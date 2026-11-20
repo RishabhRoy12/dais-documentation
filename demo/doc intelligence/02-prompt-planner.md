@@ -38,7 +38,7 @@ A single rounded bar across the page.
 | Element | Details |
 |---|---|
 | Topic box | Search icon, placeholder **"Enter a topic to analyze"**, wide |
-| Engine dropdown | Default **ChatGPT**. Options: **ChatGPT**, **Gemini** |
+| Engine dropdown | Default = first enabled model (ChatGPT in the sample). Options: one per model enabled for the brand |
 | **Run Research** | Teal filled button. Runs the query for the typed topic and engine |
 | **Refresh Data** | Outlined button with a refresh icon. Reloads the current results |
 
@@ -72,7 +72,7 @@ Column meaning (inferred from the names; values not captured): Volume is the dem
 | Control | Type | Action |
 |---|---|---|
 | Topic box | Text input | Topic to research |
-| ChatGPT / Gemini | Dropdown | Choose the AI engine |
+| Model | Dropdown | Choose the AI engine |
 | Run Research | Button | Run the query |
 | Refresh Data | Button | Reload results |
 | Related Topics / Prompts / Brands / Source Domains | Tabs | Switch result view |
@@ -103,6 +103,6 @@ Only the shell calls (subscription, profile, role checks, notifications) were se
 ## 6. Behaviour rules
 
 - **Starts empty:** nothing loads until a topic is entered and **Run Research** is pressed.
-- **Engine choice:** the default engine is ChatGPT; Gemini is the only other option.
+- **Engine choice:** the default is the first enabled model (ChatGPT in the sample); the other options depend on the brand's model config.
 - **Same view for Pro User and Sub-Admin:** no difference was seen between the two roles.
 - **Access control:** the app has a permission check for selecting prompts (`get_prompt_selection_access`); whether this page uses it was not confirmed.
