@@ -4,7 +4,7 @@
 
 **Notation:** A **concept** = a topic AI models associate with the brand (for example manufacturing, certifications, ingredients). **Sentiment** = positive, neutral or negative. The **property ID** = the ID that links the brand to its data in Semrush.
 
-**Goal:** the page shows which concepts AI models associate with the brand, how often, and with what sentiment. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
+**Goal:** the page shows which concepts AI models associate with the brand, how often, and with what sentiment. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data. It updates automatically **every month**.
 
 ## Purpose and Access
 
@@ -79,9 +79,3 @@ flowchart TD
 | No concepts show | Check the property ID and that the prompts were given to Semrush. Then report it to the product team. |
 | Negative column is empty | Every negative value is 0 for that month. This is a real result. |
 | Someone wants to upload data | Not needed and not done. |
-
-## Open points
-
-| # | Question |
-|---|----------|
-| 1 | How often does the data update (the page is monthly)? |

@@ -2,7 +2,7 @@
 
 **Notation:** A **scan date** = the date a set of citation results belongs to. A **citation** = an AI model (one enabled for the brand, e.g. ChatGPT, Gemini, Perplexity) names the brand's website (or a competitor's) as a source in its answer to a tracked prompt. The **property ID** = the ID that links the brand to its data in Semrush.
 
-**Goal:** the Citation Overview page shows whether and where AI models cite the brand's website. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
+**Goal:** the Citation Overview page shows whether and where AI models cite the brand's website. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data. It updates automatically **every Saturday**.
 
 ## Purpose and Access
 
@@ -88,11 +88,3 @@ Page details: `doc analytics/06-citation-overview.md`.
 | Every grid cell shows ✗ | No citation for the brand's domain on those scans. This is a real result, not an error. |
 | A row has no chevron | The brand's domain was never cited for that prompt. |
 | Someone wants to upload citation data | Not needed and not done. |
-
-## Open points
-
-Not in the page docs and not verified in the live app. Confirm with the product team:
-
-| # | Question |
-|---|----------|
-| 1 | How often does the data move from Semrush to the page? |

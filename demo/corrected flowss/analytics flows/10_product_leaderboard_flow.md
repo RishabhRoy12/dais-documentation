@@ -4,7 +4,7 @@
 
 **Goal:** the page shows where the brand and each of its products rank in ChatGPT Shopping, week by week. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
 
-**Only when the project has products:** the data in the Product Leaderboard is shown only when the project has products. A project without products has no leaderboard data.
+**Only when the project has products:** if the project has products, the Product Leaderboard data is taken from **Semrush** and kept updated. If the project has no products, the leaderboard data is removed and the page shows the empty state.
 
 ## Purpose and Access
 
@@ -90,10 +90,3 @@ Page details: `doc analytics/10-product-leaderboard.md`.
 | Product Leaderboard is not in the sidebar | The page is shown only for brands that have it enabled. |
 | A product shows only `-` | It was not ranked on those dates (products that never ranked recently sit at the bottom, all dashes). |
 | Someone wants to upload ranks | Not needed and not done. |
-
-## Open points
-
-| # | Question |
-|---|----------|
-| 1 | Is "the project has products" the same as the sidebar item being enabled for the brand, or are they two separate checks? |
-| 2 | Where are the products defined (in Semrush, or in the platform)? |

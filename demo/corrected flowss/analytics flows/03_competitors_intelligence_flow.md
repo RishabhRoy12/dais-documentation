@@ -2,7 +2,7 @@
 
 > Written for the **Competitors Intelligence** page (`/analytics/competitors`, `doc analytics/03-competitors-intelligence.md`).
 
-**Notation:** **Share of Voice** = the brand's percentage share of AI mentions compared with its competitors. **Mentions in AI Indexed Sources** = how often the brand and competitors are mentioned in sources that AI models index. The **property ID** = the ID that links the brand to its data in Semrush and in GA4. The **Sheet** = the brand's own Excel / Google Sheet that holds the competitor domain data (one Sheet per brand). The **AI insight** = the one-line summary and the RECOMMENDED ACTIONS cards (both BETA).
+**Notation:** **Share of Voice** = the brand's percentage share of AI mentions compared with its competitors. **Mentions in AI Indexed Sources** = how often the brand and competitors are mentioned in sources that AI models index. The **property ID** = the ID that links the brand to its data in Semrush and in GA4. The **Sheet** = the brand's own Google Sheet that holds the competitor domain data (one Sheet per brand). The **AI insight** = the one-line summary and the RECOMMENDED ACTIONS cards (both BETA).
 
 **Goal:** the page compares the brand with its competitors. It has five data blocks from **two sources**, plus an AI insight built from them:
 
@@ -155,9 +155,3 @@ Page details: `doc analytics/03-competitors-intelligence.md`.
 | A competitor is missing in a line chart | Check the brand filter; the brand may be deselected. |
 | AI insight or actions look wrong | They are built from the page data. Check the Semrush and Sheet data first. |
 | Someone wants to upload Semrush data | Not needed and not done. |
-
-## Open points
-
-| # | Question |
-|---|----------|
-| 1 | Is each brand's Sheet an Excel file or a Google Sheet? |
