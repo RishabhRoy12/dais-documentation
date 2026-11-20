@@ -1,14 +1,12 @@
 # Reddit Overview Flow
 
-**Notation:** A **subreddit** = a Reddit community. A **thread** = one Reddit post. A **scan date** = the date a set of results belongs to. The **property ID** = the ID that links the brand to its data in Semrush and in GA4.
+**Notation:** A **subreddit** = a Reddit community. A **thread** = one Reddit post. A **scan date** = the date a set of results belongs to. The **property ID** = the ID that links the brand to its data in Semrush.
 
-**Starting point:** the approved prompts from `../../prompt selections.md`, tracked in Semrush (see `04_prompt_ranking_flow.md`).
-
-**Goal:** the page shows which subreddits and threads AI models cite when answering the brand's prompts. The page data is taken from **GA4**. GA4 gets its data from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
+**Goal:** the page shows which subreddits and threads AI models cite when answering the brand's prompts. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
 
 ## Purpose and Access
 
-The page (`/analytics/reddit-overview`) has a model dropdown (ChatGPT or Gemini) and a scan-date dropdown, and two tables:
+The page (`/analytics/reddit-overview`) has a model dropdown (one option per AI model enabled for the brand, e.g. ChatGPT, Gemini, Perplexity) and a scan-date dropdown, and two tables:
 
 1. **Subreddit Impact:** prompts, visibility %, threads and citations per subreddit.
 2. **Threads:** the cited threads, with their link, subreddit and number of prompts.
@@ -18,9 +16,8 @@ There is no AI insight line and no recommended actions on this page. The client 
 ## In short
 
 1. The brand is linked to its Semrush property ID (once).
-2. The data comes from Semrush into GA4 through the Semrush API.
-3. The page takes its data from GA4.
-4. The page updates automatically. The client chooses the model and scan date.
+2. The data comes from Semrush through the Semrush API straight to the page.
+3. The page updates automatically. The client chooses the model and scan date.
 
 ## 1. Overall journey
 
@@ -28,23 +25,22 @@ There is no AI insight line and no recommended actions on this page. The client 
 flowchart TD
     P(["Brand is linked to its<br/>property ID"])
     P --> S["Semrush API<br/>data fetched as per the property ID"]
-    S --> GA[("GA4<br/>holds the data that came from Semrush")]
-    GA --> PG["Reddit Overview page<br/>takes its data from GA4"]
+    S --> PG["Reddit Overview page<br/>takes its data from Semrush"]
 
-    PG --> SEL["Client picks model (ChatGPT / Gemini)<br/>and scan date (latest by default)"]
+    PG --> SEL["Client picks model (AI models per brand)<br/>and scan date (latest by default)"]
     SEL --> T1["Subreddit Impact table"]
     SEL --> T2["Threads table"]
 
-    PG --> NEXT["Next update: comes through<br/>Semrush → GA4 → page automatically"]
+    PG --> NEXT["Next update: comes through<br/>Semrush → page automatically"]
     NEXT --> S
 
-    N["No fetching, typing or uploading"] -.-> GA
+    N["No fetching, typing or uploading"] -.-> PG
 
     classDef ext fill:#fff7e6,stroke:#d69e2e,color:#744210
     classDef stage fill:#eef6ff,stroke:#2b6cb0,color:#1a365d
     classDef done fill:#e6ffed,stroke:#2f855a,color:#22543d
     classDef note fill:#f7fafc,stroke:#a0aec0,color:#2d3748
-    class S,GA ext
+    class S ext
     class P,PG,SEL stage
     class P done
     class N note
@@ -52,8 +48,7 @@ flowchart TD
 
 ## System rules
 
-- The page data is taken from **GA4**.
-- GA4 gets the data from **Semrush**, matched by the brand's **property ID**, through the **Semrush API**.
+- The page data comes directly from **Semrush**, matched by the brand's **property ID**, through the **Semrush API**.
 - The same source is used for the Citation Overview, the Sentiment Overview and the Product Leaderboard.
 - The data updates **automatically**. There is no manual add or upload.
 - The client cannot add or change any data.
@@ -68,23 +63,22 @@ flowchart TD
 |------|--------------|-------|
 | Brand ↔ property ID | Brand setup | Set once per brand |
 | Source data | Semrush, read through the Semrush API | Matched by property ID |
-| Page data | GA4 | Comes from Semrush |
-| Both tables and the date list | `fetch-reddit-overview` (per the page docs) | `{}` for ChatGPT and the latest date; model and date added when chosen |
+| Page data | Semrush | Read through the Semrush API |
+| Both tables and the date list | `fetch-reddit-overview` (per the page docs) | `{}` for the first enabled model and the latest date; model and date added when chosen |
 
 Page details: `doc analytics/08-reddit-overview.md`.
 
 ## Runbook: Client
 
-1. Finish prompt selection (see `../../prompt selections.md`).
-2. Open **Analytics → Reddit Overview**.
-3. Choose a model and a scan date to see the subreddits and threads.
+1. Open **Analytics → Reddit Overview**.
+2. Choose a model and a scan date to see the subreddits and threads.
 
 ## Troubleshooting
 
 | Situation | What to check |
 |-----------|---------------|
 | "No subreddit data available yet." | No subreddit data for that model and date. Try another date. If every date is empty, check the property ID. |
-| Gemini has fewer dates | Available dates differ per model. |
+| One model has fewer dates | Available dates differ per model. |
 | Someone wants to upload data | Not needed and not done. |
 
 ## Open points
@@ -92,4 +86,3 @@ Page details: `doc analytics/08-reddit-overview.md`.
 | # | Question |
 |---|----------|
 | 1 | How often does the data update? |
-| 2 | What happens if the Semrush API call fails? Who is told? |

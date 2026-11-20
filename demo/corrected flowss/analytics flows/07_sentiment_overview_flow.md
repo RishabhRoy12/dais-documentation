@@ -1,12 +1,10 @@
-# Sentiment Overview Flow
+# Concept Overview Flow (Sentiment Overview)
 
-> Written for the **Concept Overview** page (`/analytics/concept-overview`, `doc analytics/07-concept-overview.md`), because it is the only analytics page that shows sentiment. If "Sentiment Overview" means a different page, tell me and I will change it.
+> Written for the **Concept Overview** page (`/analytics/concept-overview`, `doc analytics/07-concept-overview.md`). "Sentiment Overview" and "Concept Overview" are the same page.
 
-**Notation:** A **concept** = a topic AI models associate with the brand (for example manufacturing, certifications, ingredients). **Sentiment** = positive, neutral or negative. The **property ID** = the ID that links the brand to its data in Semrush and in GA4.
+**Notation:** A **concept** = a topic AI models associate with the brand (for example manufacturing, certifications, ingredients). **Sentiment** = positive, neutral or negative. The **property ID** = the ID that links the brand to its data in Semrush.
 
-**Starting point:** the approved prompts from `../../prompt selections.md`, tracked in Semrush (see `04_prompt_ranking_flow.md`).
-
-**Goal:** the page shows which concepts AI models associate with the brand, how often, and with what sentiment. The page data is taken from **GA4**. GA4 gets its data from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
+**Goal:** the page shows which concepts AI models associate with the brand, how often, and with what sentiment. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
 
 ## Purpose and Access
 
@@ -20,9 +18,8 @@ The client can only view the page. The client cannot add or change any data.
 ## In short
 
 1. The brand is linked to its Semrush property ID (once).
-2. The data comes from Semrush into GA4 through the Semrush API.
-3. The page takes its data from GA4.
-4. The page updates automatically. The client picks a month to see.
+2. The data comes from Semrush straight to the page through the Semrush API.
+3. The page updates automatically. The client picks a month to see.
 
 ## 1. Overall journey
 
@@ -30,23 +27,22 @@ The client can only view the page. The client cannot add or change any data.
 flowchart TD
     P(["Brand is linked to its<br/>property ID"])
     P --> S["Semrush API<br/>data fetched as per the property ID"]
-    S --> GA[("GA4<br/>holds the data that came from Semrush")]
-    GA --> PG["Concept Overview page<br/>takes its data from GA4"]
+    S --> PG["Concept Overview page<br/>takes its data from Semrush"]
 
     PG --> P1["Concepts Aggregated table<br/>mentions + positive / neutral / negative bars"]
     PG --> P2["Brand vs competitors table<br/>mentions per concept"]
     PG --> M["Client picks a month<br/>(latest month by default)"]
 
-    PG --> NEXT["Next update: comes through<br/>Semrush → GA4 → page automatically"]
+    PG --> NEXT["Next update: comes through<br/>Semrush → page automatically"]
     NEXT --> S
 
-    N["No fetching, typing or uploading"] -.-> GA
+    N["No fetching, typing or uploading"] -.-> PG
 
     classDef ext fill:#fff7e6,stroke:#d69e2e,color:#744210
     classDef stage fill:#eef6ff,stroke:#2b6cb0,color:#1a365d
     classDef done fill:#e6ffed,stroke:#2f855a,color:#22543d
     classDef note fill:#f7fafc,stroke:#a0aec0,color:#2d3748
-    class S,GA ext
+    class S ext
     class P,PG stage
     class P done
     class N note
@@ -54,8 +50,7 @@ flowchart TD
 
 ## System rules
 
-- The page data is taken from **GA4**.
-- GA4 gets the data from **Semrush**, matched by the brand's **property ID**, through the **Semrush API**.
+- The page data comes directly from **Semrush**, matched by the brand's **property ID**, through the **Semrush API**.
 - The same source is used for the Citation Overview, the Reddit Overview and the Product Leaderboard.
 - The data updates **automatically**. There is no manual add or upload.
 - The client cannot add or change any data.
@@ -69,14 +64,13 @@ flowchart TD
 |------|--------------|-------|
 | Brand ↔ property ID | Brand setup | Set once per brand |
 | Source data | Semrush, read through the Semrush API | Matched by property ID |
-| Page data | GA4 | Comes from Semrush |
+| Page data | Semrush, read through the Semrush API | Comes directly from Semrush |
 | Concepts, mentions, sentiments, month list | `fetch-concept-data` (per the page docs) | `{}` for the latest month, `{ "month": "{YYYY-MM}" }` for another month |
 
 ## Runbook: Client
 
-1. Finish prompt selection (see `../../prompt selections.md`).
-2. Open **Analytics → Concept Overview**.
-3. Pick a month to see the concepts and their sentiment.
+1. Open **Analytics → Concept Overview**.
+2. Pick a month to see the concepts and their sentiment.
 
 ## Troubleshooting
 
@@ -90,6 +84,4 @@ flowchart TD
 
 | # | Question |
 |---|----------|
-| 1 | Is "Sentiment Overview" the Concept Overview page, or a separate page? |
-| 2 | How often does the data update (the page is monthly)? |
-| 3 | What happens if the Semrush API call fails? Who is told? |
+| 1 | How often does the data update (the page is monthly)? |
