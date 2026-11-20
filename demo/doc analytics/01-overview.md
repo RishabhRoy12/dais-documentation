@@ -169,7 +169,7 @@ Footer row **Total**: sums of the columns above; bounce rate is the total-level 
 | Title | Heading with ⓘ. Pattern: **"Prompt Ranking Performance Week Wise ({Engine})"** | Engine name updates with the toggle |
 | ⓘ tooltip | | "Daily tracking of your brand's ranking position across key AI prompts, showing visibility trends over time." |
 | **Date selector** | Multi-select dropdown button, label **"{n} of {total} dates"** (default all selected) | Menu: **Select All** · **Deselect All** · one checkbox row per weekly snapshot date (`DD-Mon-YYYY`, newest first). The table shows only checked dates. At least one date always stays selected (Deselect All leaves 1) |
-| **Engine toggle** | Two tab buttons: **ChatGPT** (default, active = teal) · **Gemini** | Switches the engine whose data is shown; the heading and table values change |
+| **Engine toggle** | One tab button per enabled model (for example ChatGPT, Gemini, Perplexity); the first is the default (active = teal) | Switches the engine whose data is shown; the heading and table values change |
 
 **Table**
 | Column | Description |
@@ -231,7 +231,7 @@ Difference: it also includes rows where the **session source is a different chan
 | Compare date range | Header (compare mode) | Calendar popover |
 | Search landing pages | AI and Organic landing tables | Text search with clear button |
 | "{n} of {total} dates" | Prompt Ranking block | Multi-select dropdown with Select All / Deselect All |
-| ChatGPT / Gemini | Prompt Ranking block | Two-way toggle (tabs) |
+| Model tabs | Prompt Ranking block | One tab per enabled model |
 | ⓘ icons (16 on this page) | Section titles, chart titles, KPI captions, GSC pill | Hover tooltips (texts listed above) |
 
 ### Not present on this page

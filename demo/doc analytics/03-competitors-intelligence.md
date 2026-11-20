@@ -16,7 +16,7 @@
 ## 1. Purpose
 
 Compares the brand with its competitors on three fronts:
-1. **AI visibility**: how often the brand and competitors are mentioned by AI models (share of voice and mention counts over time, Gemini and ChatGPT).
+1. **AI visibility**: how often the brand and competitors are mentioned by AI models (share of voice and mention counts over time, per enabled model).
 2. **Search strength**: competitor domain metrics from Semrush (organic traffic, keywords, backlinks, referring domains, authority score).
 3. **Traffic and keyword mix**: share of organic traffic by domain, and branded vs non-branded keyword split by domain.
 
@@ -61,14 +61,14 @@ Small uppercase label with a **BETA** pill, then 3 cards (the number can vary).
 
 Cards are read-only. Observed themes: traffic-share deficit against the leader; authority-score gap; capturing a larger share of AI mentions.
 
-### 3.3 Share of Voice – {Gemini | ChatGPT}
+### 3.3 Share of Voice – {Model}
 Title in teal with an **ⓘ** icon; the model name in the title follows the toggle. **ⓘ tooltip:** "Percentage share of AI Overview mentions captured by your brand versus competitors on each day."
 
 | Element | Type | Details |
 |---|---|---|
 | **Brand filter** | Pill button, label "{n} of {total} brands" (default: 10 selected of all tracked brands) | Opens **Filter Brands** panel (see below) |
 | **Date range** | Dropdown pill, default **Last 7 days** | Options: **Last 7 days** · **Last 14 days** · **Last 30 days** · **All time** |
-| **Model toggle** | Two tab buttons **Gemini** · **ChatGPT**, active = teal. Default: Gemini | Switches the model; the title changes to "Share of Voice - ChatGPT" |
+| **Model toggle** | One tab button per enabled model, active = teal. Default: first enabled model | Switches the model; the title changes to "Share of Voice - {Model}" |
 | **Chart** | Smooth multi-line chart, one line (with point markers) per selected brand | X: dates (`Mon D`, one label per day for short ranges). Y: percentage 0% to rounded max, ticks every few percent (e.g. 0%, 3%, 6%, 9%, 12%) |
 | **Legend** | Row above the chart: colour swatch + brand name for each selected brand | Clicking a legend entry **hides/shows that brand's line** |
 | **Hover** | Tooltip listing the date and every brand's value: `{Brand} : {n.nn}%` | The chosen brand (yours) is always first |
@@ -83,14 +83,14 @@ Title in teal with an **ⓘ** icon; the model name in the title follows the togg
 | **Clear** | Deselects all competitors but **keeps your own brand selected** (label becomes "1 of {total} brands") |
 | Search box | None |
 
-### 3.4 Brand's Mention in AI Indexed Sources – {ChatGPT | Gemini}
+### 3.4 Brand's Mention in AI Indexed Sources – {Model}
 **ⓘ tooltip:** "Tracks how frequently your brand and competitors are mentioned across AI-indexed sources over time."
 
 | Element | Type | Details |
 |---|---|---|
 | **Brand filter** | Pill button "{n} of {total} brands" (default "10 of 10 brands": the set of brands that have mentions) | Same **Filter Brands** panel; its list is the brands found in this dataset |
 | **Date range** | Dropdown pill, default **Last 7 days** | Same four options |
-| **Model toggle** | Tabs **ChatGPT** (default, active) · **Gemini** | Title becomes "Brand's Mention in AI Indexed Sources - {Model}" |
+| **Model toggle** | One tab per enabled model (first is default, active) | Title becomes "Brand's Mention in AI Indexed Sources - {Model}" |
 | **Chart** | Smooth multi-line chart, one line per selected brand | X: dates (`Mon D`) with axis title **Date**. Y: mention count (integers) with axis title **Value** |
 | **Legend** | Brand names with colour swatches; a **›** arrow at the right moves to more entries when they do not fit | |
 | **Hover** | Tooltip with the date and `{Brand} : {n}` for every brand | |
@@ -143,7 +143,7 @@ Left: **"Data source: ChatGPT AI Overview, Semrush"**. Right: **Privacy Policy**
 |---|---|---|
 | "{n} of {total} brands" (×2) | Share of Voice and Mentions cards | Multi-select panel with All / Clear |
 | Last 7 days (×2) | Same cards | Dropdown: Last 7 / 14 / 30 days, All time |
-| Gemini / ChatGPT (×2) | Same cards | Two-way tab toggles (opposite order and default per card) |
+| Model tabs (×2) | Same cards | One tab per enabled model (default may differ per card) |
 | Legend entries | Both line charts | Click to hide or show a brand's line |
 | Legend scroll arrow ›  | Mentions chart | Shows more legend entries |
 | ⓘ icons (5) | Chart and table titles | Hover tooltips (texts above) |

@@ -35,8 +35,8 @@ This page has **no AI insight line, no Recommended Actions and no ⓘ tooltips**
 
 | Control | Type | Details |
 |---|---|---|
-| **Model dropdown** | Dropdown, default **ChatGPT** | Options: **ChatGPT** · **Gemini**. Switching reloads both tables for that model and resets the date to the latest available for it |
-| **Scan-date dropdown** | Dropdown showing `{YYYY-MM-DD}`, default = latest scan date | Lists the scan dates that have data for the chosen model, newest first (sample: 15 dates for ChatGPT, fewer for Gemini). Choosing a date reloads both tables |
+| **Model dropdown** | Dropdown, default = first enabled model (ChatGPT in the sample) | One option per model enabled for the brand. Switching reloads both tables for that model and resets the date to the latest available for it |
+| **Scan-date dropdown** | Dropdown showing `{YYYY-MM-DD}`, default = latest scan date | Lists the scan dates that have data for the chosen model, newest first (sample: 15 dates for ChatGPT, fewer for Gemini; varies by model). Choosing a date reloads both tables |
 
 ---
 
@@ -87,7 +87,7 @@ Card titled **"Threads"**.
 ### Buttons and dropdowns
 | Element | Location | Type |
 |---|---|---|
-| Model (ChatGPT / Gemini) | Header, right | Dropdown |
+| Model (one option per enabled model) | Header, right | Dropdown |
 | Scan date (`{YYYY-MM-DD}`) | Header, right | Dropdown |
 | Column headers with ⇅ | Both tables | Sort buttons (see 4.1) |
 | Subreddit names and link icons | Both tables | External links (new tab) |
@@ -116,7 +116,7 @@ AI insight line, Recommended Actions, ⓘ tooltips, page-level date range picker
 
 | Data block | Call | Input |
 |---|---|---|
-| Both tables and the date list | `POST fetch-reddit-overview` | `{}` on first load (ChatGPT, latest date); `{ "model": "gemini-2.5-flash" }` when Gemini is chosen; `{ "model": "{model}", "date": "{YYYY-MM-DD}" }` when a date is chosen |
+| Both tables and the date list | `POST fetch-reddit-overview` | `{}` on first load (first enabled model, latest date); `{ "model": "{model}" }` when another model is chosen (e.g. `gemini-2.5-flash`); `{ "model": "{model}", "date": "{YYYY-MM-DD}" }` when a date is chosen |
 | Usage tracking | `POST user_page_sessions` | `page_path: "/analytics/reddit-overview"`, `user_id` |
 
 Shell calls (roles, subscription, notifications) are listed in [00-global-layout.md](00-global-layout.md) section 5.
@@ -127,6 +127,6 @@ Shell calls (roles, subscription, notifications) are listed in [00-global-layout
 
 - **Brand scoped:** all data is for the brand selected in the top bar.
 - **Model and date drive both tables.** Each combination triggers a new `fetch-reddit-overview` call.
-- **Available dates differ per model**, so switching to Gemini can shorten the date list and reset the selected date.
+- **Available dates differ per model**, so switching to another model can shorten the date list and reset the selected date.
 - **Visibility %** is the subreddit's share of all subreddit citations for that scan (values add up to 100% across the subreddits shown).
 - **Scan dates with no data** show the empty state in Subreddit Impact while the Threads table can still list rows from that date's data; in the sample, such a date (`{YYYY-MM-DD}`) showed "No subreddit data available yet." above a populated Threads table.

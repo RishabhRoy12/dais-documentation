@@ -26,8 +26,8 @@ This page has **no AI insight line and no Recommended Actions**.
 | # | Section | Contents |
 |---|---|---|
 | 1 | Page title | "Concept Overview" (no subtitle, no page-level date filter) |
-| 2 | Model pill | A single teal pill labelled "ChatGPT" |
-| 3 | Concepts Aggregated – ChatGPT | Month dropdown, sentiment key, concept table with bars |
+| 2 | Model pill | A single teal pill labelled with the first enabled model (ChatGPT in the sample) |
+| 3 | Concepts Aggregated – {Model} | Month dropdown, sentiment key, concept table with bars |
 | 4 | Concepts by Brand | Snapshot date label, model dropdown, concept × brand table |
 
 ---
@@ -35,9 +35,9 @@ This page has **no AI insight line and no Recommended Actions**.
 ## 3. Section details
 
 ### 3.1 Model pill
-A single rounded teal button labelled **ChatGPT** under the title. It shows which model the first table covers. Clicking it does nothing (no menu, no switching), and there is no other option.
+A single rounded teal button labelled with the first enabled model (**ChatGPT** in the sample) under the title. It shows which model the first table covers. Clicking it does nothing (no menu, no switching).
 
-### 3.2 Concepts Aggregated – ChatGPT
+### 3.2 Concepts Aggregated – {Model}
 Title with an **ⓘ** icon. **ⓘ tooltip:** "Aggregated concept mentions and sentiment analysis, showing how frequently key topics are discussed with positive, neutral, or negative sentiment."
 
 | Element | Type | Details |
@@ -68,7 +68,7 @@ Title with an **ⓘ** icon and a small grey date label **"({YYYY-MM-DD})"** (the
 
 | Element | Type | Details |
 |---|---|---|
-| **Model dropdown** | Dropdown on the right, default **ChatGPT** | Options: **ChatGPT** · **Gemini**. Changes only this table (the first table and its title stay on ChatGPT) |
+| **Model dropdown** | Dropdown on the right, default = first enabled model (ChatGPT in the sample) | One option per model enabled for the brand (for example ChatGPT, Gemini, Perplexity). Changes only this table (the first table and its title stay on the first model) |
 
 **Table columns**
 | Column | Description |
@@ -84,7 +84,7 @@ Title with an **ⓘ** icon and a small grey date label **"({YYYY-MM-DD})"** (the
 | `0` (dimmed grey) | No mentions |
 
 **Table behaviour**
-- Rows are ordered alphabetically by concept name. The set of concepts and the numbers differ between ChatGPT and Gemini (e.g. 12 rows for ChatGPT in the sample, a different list for Gemini).
+- Rows are ordered alphabetically by concept name. The set of concepts and the numbers differ between models (e.g. 12 rows for ChatGPT in the sample, a different list for Gemini).
 - The first column is pinned; numeric columns are right-aligned.
 - The box has a fixed height; there is no pagination, sorting, search box or export. Rows are not clickable.
 
@@ -95,9 +95,9 @@ Title with an **ⓘ** icon and a small grey date label **"({YYYY-MM-DD})"** (the
 ### Buttons, dropdowns and toggles
 | Element | Location | Type |
 |---|---|---|
-| ChatGPT pill | Under the title | Static label styled as a button (no action) |
+| Model pill | Under the title | Static label styled as a button (no action) |
 | Month dropdown ("{Month YYYY}") | Concepts Aggregated header | Dropdown |
-| Model dropdown ("ChatGPT") | Concepts by Brand header | Dropdown (ChatGPT, Gemini) |
+| Model dropdown | Concepts by Brand header | Dropdown (one option per enabled model) |
 | ⓘ icons (2) | Both table titles | Hover tooltips (texts above) |
 
 ### Not present on this page
@@ -131,7 +131,7 @@ Shell calls (roles, subscription, notifications) are listed in [00-global-layout
 ## 6. Behaviour rules
 
 - **Brand scoped:** all data is for the brand selected in the top bar.
-- **Independent controls:** the Month dropdown affects only Concepts Aggregated; the Model dropdown affects only Concepts by Brand. The first table is always ChatGPT.
+- **Independent controls:** the Month dropdown affects only Concepts Aggregated; the Model dropdown affects only Concepts by Brand. The first table always uses the first enabled model.
 - **Month change** triggers a new `fetch-concept-data` call, and the number of rows can change between months (sample: 17 rows in July vs 27 in June).
 - **Concept hierarchy** is encoded in the name with `__` separators and is displayed as-is (not indented or collapsible).
 - **Brand column:** the user's own brand is always the last column, and competitors are the ones tracked for the brand.
