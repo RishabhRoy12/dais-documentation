@@ -116,3 +116,4 @@ Shell calls (roles, subscription, notifications) are listed in [00-global-layout
 - **Summary maths** are all for the latest scan date (the first grid column): sample check: ranks 1, 5 and 9 give RANKED 3, TOP 3 = 1, TOP 5 = 2, AVG RANK = 5.0.
 - **Dates** are the scan dates from the ranking data (weekly, with occasional extra dates).
 - **Empty until ranked:** the empty state appears when the data call returns nothing.
+- **Products decide the data:** if the project has products, the leaderboard data is taken from Semrush and kept updated. If the project has no products, the leaderboard data is removed and the page shows the empty state.

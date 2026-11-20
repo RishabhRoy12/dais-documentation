@@ -2,7 +2,7 @@
 
 **Notation:** A **subreddit** = a Reddit community. A **thread** = one Reddit post. A **scan date** = the date a set of results belongs to. The **property ID** = the ID that links the brand to its data in Semrush.
 
-**Goal:** the page shows which subreddits and threads AI models cite when answering the brand's prompts. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data, and it keeps updating automatically.
+**Goal:** the page shows which subreddits and threads AI models cite when answering the brand's prompts. The page data comes directly from **Semrush**, using the **property ID** through the **Semrush API**. Nobody types in or uploads the data. It updates automatically **every Saturday**.
 
 ## Purpose and Access
 
@@ -50,7 +50,7 @@ flowchart TD
 
 - The page data comes directly from **Semrush**, matched by the brand's **property ID**, through the **Semrush API**.
 - The same source is used for the Citation Overview, the Sentiment Overview and the Product Leaderboard.
-- The data updates **automatically**. There is no manual add or upload.
+- The data updates **automatically every Saturday**. There is no manual add or upload.
 - The client cannot add or change any data.
 - The data is **brand scoped**.
 - The model and the scan date drive **both tables**. Available dates differ per model.
@@ -80,9 +80,3 @@ Page details: `doc analytics/08-reddit-overview.md`.
 | "No subreddit data available yet." | No subreddit data for that model and date. Try another date. If every date is empty, check the property ID. |
 | One model has fewer dates | Available dates differ per model. |
 | Someone wants to upload data | Not needed and not done. |
-
-## Open points
-
-| # | Question |
-|---|----------|
-| 1 | How often does the data update? |
